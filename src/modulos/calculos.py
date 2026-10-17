@@ -1,9 +1,12 @@
 from src.datos.pizzas import pizzerias_ingredientes
 from src.datos.ingredientes import ingrediente_precio, ingredientes_gramos
 from src.datos.temporada import temporada
+from src.modulos.catalogo_productos import obtener_catalogo
 
 
 def seleccionar_pizzas():
+
+    obtener_catalogo()
 
     # aqui ira la funcion de mostrar pizzas
     # 1 calcular precio pizza y desglose de precio
