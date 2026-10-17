@@ -13,5 +13,4 @@ def obtener_catalogo ():
             print(f"    -{limpio}")
             
         print("\n")
-
-    return print(pizza)    
+    
