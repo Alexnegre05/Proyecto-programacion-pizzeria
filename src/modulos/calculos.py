@@ -1,5 +1,7 @@
 from src.datos.pizzas import pizzerias_ingredientes
 from src.datos.ingredientes import ingrediente_precio, ingredientes_gramos
+from src.datos.temporada import temporada
+
 
 def seleccionar_pizzas():
 
@@ -39,7 +41,9 @@ def seleccionar_pizzas():
 
 
         precio_total_ingredientes = 0 # esto suma cuanto cuesta el total
+
         for i in range(0, len(ingredientes)): # vamos ingrediente a ingrediente
+           
            ingrediente_actual = ingredientes[i] # por cada ingrediente sacamos su precio en gramos 
 
            precio_normal = ingrediente_precio[ingrediente_actual]*ingredientes_gramos[ingrediente_actual]
@@ -48,7 +52,7 @@ def seleccionar_pizzas():
 
            precio_total_ingredientes = precio_total_ingredientes + precio_normal
 
-        print("la pizza cuesta sin IVA ni gastos", precio_total_ingredientes)
+        print("la pizza cuesta sin IVA ni gastos ni temporada", precio_total_ingredientes)
 
         # aqui sumamos gastos, de momento son 0
 
@@ -56,11 +60,14 @@ def seleccionar_pizzas():
 
         precio_total_ingredientes = precio_total_ingredientes + gastos_suministros
 
-        print("la pizza cuesta sin IVA pero con gastos: ", precio_total_ingredientes)
+        print("la pizza cuesta sin IVA ni temporada  pero con gastos: ", precio_total_ingredientes)
 
         # ahora añadimos el IVA, en este caso es *1,21
 
         precio_total_ingredientes = precio_total_ingredientes*1.21
 
-        print("la pizza al final cuesta: ", precio_total_ingredientes)
+        print("la pizza cuesta sin temporada: ", precio_total_ingredientes)
+
+        precio_final = precio_total_ingredientes*temporada[0]
+        print("la pizza final cuesta")
 

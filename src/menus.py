@@ -28,7 +28,7 @@ def menu_principal():
 
         print("opcion 2 bebidas")
 
-        print("opcion 3 otros")
+        print("opcion 3 otros") # aqui añadimos todo lo referente a ofertas, temporadas...
 
         opcion = int(input("selecciona una opcion correcta de el menu: "))
 
