@@ -120,13 +120,14 @@ ingredientes_gramos = {
     "Queso_Brie": 45,
     "Queso_Raclette":40,
     "Sobrasada": 45,
-    "Rúcula": 0.0290,
-    "Crema_pistacho": 0.0320,
-    "Mermelada_tomate_vainilla": 0.0350,
-    "Crema_balsámica": 0.0350,
-    "Queso_Roquefort": 0.0380,
-    "Salmón_ahumado": 0.0650,
-    "Jamón_Ibérico": 0.0850,
-    "Foie_mi-cuit": 0.0900,
-    "base_queso": 0.0150
+    "Rúcula": 15,
+    "Crema_pistacho": 50,
+    "Mermelada_tomate_vainilla": 25,
+    "Crema_balsámica": 15,
+    "Queso_Roquefort": 30,
+    "Salmón_ahumado": 50,
+    "Jamón_Ibérico": 40,
+    "Foie_mi-cuit": 35,
+    "base_queso": 80
+
 }
