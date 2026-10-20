@@ -22,7 +22,7 @@ ingrediente_precio = {
     "Eneldo": 0.0070,
     "Queso_Mozzarella": 0.0075,
     "Queso_Emmental": 0.0085,
-    "Jamón_dulce": 0.0090,
+    "Jamon_dulce": 0.0090,
     "Huevo": 0.0095,
     "Baicon": 0.0100,
     "Chistorra": 0.0120,
@@ -49,7 +49,7 @@ ingrediente_precio = {
     "Salmón_ahumado": 0.0650,
     "Jamón_Ibérico": 0.0850,
     "Foie_mi-cuit": 0.0900,
-    "base_queso": 0.0150
+    "Base_queso": 0.0150
 }
 
 
@@ -77,7 +77,7 @@ ingredientes_gramos = {
     "Eneldo": 1,
     "Queso_Mozzarella": 80,
     "Queso_Emmental": 40,
-    "Jamón_dulce": 50,
+    "Jamon_dulce": 50,
     "Huevo": 50,
     "Baicon": 43,
     "Chistorra": 50,
@@ -104,6 +104,6 @@ ingredientes_gramos = {
     "Salmón_ahumado": 50,
     "Jamón_Ibérico": 40,
     "Foie_mi-cuit": 35,
-    "base_queso": 80
+    "Base_queso": 80
 
 }
