@@ -42,6 +42,6 @@ def seleccionar_bebida():
             lista_resultado = [clave, valor] # devolvemos el nombre de la bebida jubto a su precio
             return lista_resultado
 
-
+        contador += 1
 
 
