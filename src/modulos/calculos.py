@@ -49,7 +49,7 @@ def calculo_precio_pizzas():
         print("la pizza final cuesta", precio_final)
 
         lista_resultado =[pizza_escogida_nombre, precio_final]
-        precio_final 
+       
 
         return lista_resultado
 
