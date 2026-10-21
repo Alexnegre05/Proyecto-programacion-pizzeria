@@ -31,11 +31,13 @@ def calculo_precio_pizzas():
 
         print("la pizza cuesta sin IVA ni gastos ni temporada", precio_total_ingredientes)
 
-        # aqui sumamos gastos, de momento son 0
+        # aqui sumamos gastos que cuentan trabajadores luz alquiler...
 
-        gastos_suministros = 0
+        gastos_suministros = 5500
 
-        precio_total_ingredientes = precio_total_ingredientes + gastos_suministros
+        beneficios = precio_total_ingredientes/2 # nos sumamos unos beneficios que son la mitad de los precios total que cuesta hacer la pizza
+
+        precio_total_ingredientes = precio_total_ingredientes + gastos_suministros/200 + beneficios
 
         print("la pizza cuesta sin IVA ni temporada  pero con gastos: ", precio_total_ingredientes)
 
