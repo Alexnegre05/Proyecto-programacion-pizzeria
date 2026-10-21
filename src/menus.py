@@ -4,7 +4,9 @@
 
 # menu principal devuelve opcion
 def menu_principal():
-    
+
+    print("\n")
+
     print("menu")
 
     print("opcion 0 salir")
@@ -19,6 +21,8 @@ def menu_principal():
 
     while (opcion < 0 or opcion > 3): # while que compreuba si el usuario ah introducido un numero correcto
     # si no lo hace vuelve a mostra el menu con las opciones
+
+        print("\n")
 
         print("menu")
 
@@ -43,6 +47,8 @@ def menu_principal():
 # menu de solo pizas
 def menu_pizzas():
 
+    print("\n")
+
     print("menu")
 
     print("opcion 0 salir")
@@ -57,6 +63,8 @@ def menu_pizzas():
     opcion = int(input("selecciona una opcion de el menu: "))
 
     while (opcion < 0 or opcion > 3): # comprovamos que la opcion sea correcta si no lo es volvemos a mostrar el menu
+
+        print("\n")
 
         print("menu")
 
@@ -78,6 +86,8 @@ def menu_pizzas():
 
 
 def menu_bebidas():
+    
+    print("\n")
 
     print("menu")
 
@@ -90,6 +100,8 @@ def menu_bebidas():
     opcion = int(input("selecciona una opcion de el menu: "))
 
     while (opcion < 0 or opcion > 2): # comprovamos que la opcion sea correcta si no lo es volvemos a mostrar el menu
+
+        print("\n")
 
         print("menu")
 
@@ -110,6 +122,8 @@ def menu_bebidas():
 # menu de otras opciones
 def menu_otros():
 
+    print("\n")
+
     print("opcion 0 salir")
     
     print("opcion 1 ofertas") # para poder seleccionar ofertas
@@ -123,7 +137,9 @@ def menu_otros():
     opcion = int(input("selecciona una opcion de el menu: "))
 
     while (opcion < 0 or opcion > 4):  # comprovamos que la opcion sea correcta si no lo es volvemos a mostrar el menu
- 
+        
+        print("\n")
+
         print("menu")
 
         print("opcion 0 salir")
