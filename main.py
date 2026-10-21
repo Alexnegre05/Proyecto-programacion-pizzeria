@@ -4,6 +4,7 @@ from src.modulos.catalogo_productos import obtener_catalogo
 from src.modulos.calculos import calculo_precio_pizzas
 from src.modulos.cambiar_temporada import cambiar_temporada
 
+from src.modulos.seleccionar_bebidas import seleccionar_bebida, mostrar_bebidas
 
 opcion_general = menu_principal()
 
@@ -25,8 +26,17 @@ while opcion_general > 0 and opcion_general < 4:
                         
            
                     
-        case 2:  # seleccionado temporadas
-            print("desarrollo")
+        case 2:  # bebidas
+            opcion_bebidas = menu_bebidas()
+
+            if (opcion_bebidas == 1):
+                mostrar_bebidas()
+
+            else:
+                seleccionar_bebida()
+
+                
+
         case 3: # otros
              cambiar_temporada()
         
