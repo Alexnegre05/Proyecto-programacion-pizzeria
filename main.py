@@ -1,7 +1,7 @@
 
 from src.menus import menu, menu_principal,menu_pizzas,menu_bebidas,menu_otros # carpeta.carpeta., etc para importar
 from src.modulos.catalogo_productos import obtener_catalogo
-from src.modulos.calculos import seleccionar_pizzas
+from src.modulos.calculos import calculo_precio_pizzas
 
 opcion_general = menu_principal()
 
@@ -18,7 +18,7 @@ while opcion_general > 0 and opcion_general < 4:
                         obtener_catalogo()
                         
                     case 2:
-                        seleccionar_pizzas()
+                        calculo_precio_pizzas()
                         
                     case 3:
                         print("en desarrollo")
