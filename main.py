@@ -4,7 +4,7 @@ from src.modulos.catalogo_productos import obtener_catalogo
 from src.modulos.calculos import calculo_precio_pizzas
 from src.modulos.cambiar_temporada import cambiar_temporada
 from src.modulos.pedidos import mostrar_carrito
-from src.modulos.ofertas import ofertas
+from src.modulos.ofertas import ofertas,oferta_1, oferta_2, oferta_3
 
 from src.modulos.seleccionar_bebidas import seleccionar_bebida, mostrar_bebidas
 
@@ -26,7 +26,7 @@ while opcion_general > 0 and opcion_general < 4:
                 case 2:
                     pizzas = calculo_precio_pizzas()
 
-                    pizzas.append(1) # añadimos que es una pizza popniendo un 1, para saber en ofertas que es exactamente este producto
+                    pizzas.append(0) # añadimos que es una pizza popniendo un0, para saber en ofertas que es exactamente este producto
                     lista_productos.append(pizzas)
                         
                 case 3:
@@ -43,7 +43,7 @@ while opcion_general > 0 and opcion_general < 4:
             else:
                 bebidas = seleccionar_bebida()
 
-                pizzas.append(2) # añadimos que es una bebida popniendo un 2, para saber en ofertas que es exactamente este producto
+                pizzas.append(1) # añadimos que es una bebida popniendo un 1, para saber en ofertas que es exactamente este producto
                 lista_productos.append(bebidas)
 
                 
@@ -53,7 +53,21 @@ while opcion_general > 0 and opcion_general < 4:
 
              if (opcion_otros == 1):
                 
-                ofertas(lista_productos) # funcion que mira todas las ofertas
+                oferta_seleccionada = ofertas(lista_productos) # funcion que mira todas las ofertas
+
+                if (oferta_seleccionada != 0): # si hay una oferta_seleccionada
+                    
+                    if (oferta_seleccionada == 1):
+                       lista_productos = oferta_1(lista_productos)
+                       print(lista_productos)
+                    
+                    elif (oferta_seleccionada == 2):
+                        oferta_2()
+
+                    else:
+                        oferta_3()
+
+
 
              elif (opcion_otros == 2): # cambiar temporada
 
@@ -61,7 +75,8 @@ while opcion_general > 0 and opcion_general < 4:
 
              elif (opcion_otros == 3): # carrito
 
-                mostrar_carrito(lista_productos)
+                carrito = mostrar_carrito(lista_productos)
+                print(carrito)
 
    
                 

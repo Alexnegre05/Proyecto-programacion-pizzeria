@@ -5,7 +5,8 @@
 # 2. 4 pizzas y solo 4 pizzas descuento 5%
 
 # 3. n pizzas y m bebidas si y solo si n+m >=5 ^ n+m <=20 entonces n+m% de descuento total
-
+from src.datos.bebidas import bebidas_precio
+from src.modulos.seleccionar_bebidas import seleccionar_bebida, mostrar_bebidas
 
 
 def ofertas(lista_productos): # funcion que mira que oferta hay que aplicar
@@ -14,6 +15,8 @@ def ofertas(lista_productos): # funcion que mira que oferta hay que aplicar
 
     if (len(lista_productos) < 2): # si la longitud es menor a 2 no hay ninguna oferta a ofrecer
         print("no hay ninguna oferta")
+
+        return 0 # 0 indica que no hay ofertas
 
     else:
         
@@ -28,29 +31,45 @@ def ofertas(lista_productos): # funcion que mira que oferta hay que aplicar
                 count_pizzas = count_pizzas + 1
 
             else: # esto es una bebida
-                count_bebidas = count_bebidas
+                count_bebidas = count_bebidas + 1
 
 
         # dependiendo de el caso te returna un valor u otro eso indica que oferta se te ha aplicado
         if (count_pizzas == 2):
-
+            print("oferta 1")
             return 1
 
         else:
 
             if (count_pizzas == 4):
-
+                print("oferta 2")
                 return 2
 
             elif ((count_pizzas + count_bebidas) >= 5 and (count_pizzas + count_bebidas) <= 20):
+                    
+                    print("oferta 3")
                     return 3
+            
+        # si llega a el final y no ha devuelto ningun valor entonces no hay ninguna oferta a aplicar, devolvemos 0
+
+        print("oferta no")
+        return 0
 
 
 
 def oferta_1(lista_productos):
     
     print("se te aplica oferta 1")
-    pass
+
+    bebida_seleccionada = seleccionar_bebida() # llamamos a la funcion que selecciona una bebida
+
+    bebida_seleccionada[1] = 0 # ponemos el precio de esta bebida en exclusiva a 0, recibimos una lista con (nombre bebida, precio)
+
+    lista_productos.append(bebida_seleccionada)
+
+    return lista_productos  # devolvemos la bebida seleccionada
+
+    
 
 def oferta_2(lista_productos):
     
