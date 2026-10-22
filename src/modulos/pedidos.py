@@ -1,4 +1,5 @@
 def mostrar_carrito(lista_producto):
+    
     fotmat_carrito ="\n CARRITO:\n "
 
     for producto in lista_producto:

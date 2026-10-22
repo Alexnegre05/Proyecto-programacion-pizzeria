@@ -3,8 +3,13 @@ from src.menus import menu, menu_principal,menu_pizzas,menu_bebidas,menu_otros #
 from src.modulos.catalogo_productos import obtener_catalogo
 from src.modulos.calculos import calculo_precio_pizzas
 from src.modulos.cambiar_temporada import cambiar_temporada
+from src.modulos.pedidos import mostrar_carrito
+from src.modulos.ofertas import ofertas,oferta_1, oferta_2, oferta_3, menu_ofertas
 
 from src.modulos.seleccionar_bebidas import seleccionar_bebida, mostrar_bebidas
+
+lista_productos = []
+
 
 opcion_general = menu_principal()
 
@@ -19,7 +24,10 @@ while opcion_general > 0 and opcion_general < 4:
                     obtener_catalogo()
                         
                 case 2:
-                    calculo_precio_pizzas()
+                    pizzas = calculo_precio_pizzas()
+
+                    pizzas.append(0) # añadimos que es una pizza popniendo un0, para saber en ofertas que es exactamente este producto
+                    lista_productos.append(pizzas)
                         
                 case 3:
                     print("en desarrollo")
@@ -33,13 +41,37 @@ while opcion_general > 0 and opcion_general < 4:
                 mostrar_bebidas()
 
             else:
-                seleccionar_bebida()
+                bebidas = seleccionar_bebida()
+
+                pizzas.append(1) # añadimos que es una bebida popniendo un 1, para saber en ofertas que es exactamente este producto
+                lista_productos.append(bebidas)
 
                 
 
         case 3: # otros
-             cambiar_temporada()
-        
+             opcion_otros = menu_otros()
+
+             if (opcion_otros == 1): # ofertas solo sirve para saber en este momento si se le aplica o no una oferta
+                menu_ofertas()
+
+             elif (opcion_otros == 2): # cambiar temporada
+
+                cambiar_temporada()
+
+             elif (opcion_otros == 3): # carrito
+
+                carrito = mostrar_carrito(lista_productos)
+                print(carrito)
+
+            
+             else: # opcion 4
+                print("tiket")
+
+                
+    
+
+   
+                
     opcion_general = menu_principal()
                 
                     
