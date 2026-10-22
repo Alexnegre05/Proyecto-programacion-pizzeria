@@ -1,10 +1,10 @@
 
-from src.menus import menu, menu_principal,menu_pizzas,menu_bebidas,menu_otros # carpeta.carpeta., etc para importar
+from src.menus import menu_principal,menu_pizzas,menu_bebidas,menu_otros # carpeta.carpeta., etc para importar
 from src.modulos.catalogo_productos import obtener_catalogo
 from src.modulos.calculos import calculo_precio_pizzas
 from src.modulos.cambiar_temporada import cambiar_temporada
 from src.modulos.pedidos import mostrar_carrito
-from src.modulos.ofertas import ofertas,oferta_1, oferta_2, oferta_3, menu_ofertas
+from src.modulos.ofertas import  menu_ofertas
 
 from src.modulos.seleccionar_bebidas import seleccionar_bebida, mostrar_bebidas
 
