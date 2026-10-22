@@ -65,6 +65,7 @@ def oferta_1(lista_productos):
 
     bebida_seleccionada[1] = 0 # ponemos el precio de esta bebida en exclusiva a 0, recibimos una lista con (nombre bebida, precio)
 
+    bebida_seleccionada.append(1) # añadir que es categoria bebida con un 1
     lista_productos.append(bebida_seleccionada)
 
     return lista_productos  # devolvemos la bebida seleccionada
@@ -95,7 +96,7 @@ def menu_ofertas(lista_productos):
 
     for i in range(0, len(lista_productos)):
 
-        precio_final = precio_final + lista_productos[1] # el 1 es el precio 
+        precio_final = precio_final + lista_productos[i][1] # el 1 es el precio 
 
         oferta_seleccionada = ofertas(lista_productos) # funcion que mira todas las ofertas
 
