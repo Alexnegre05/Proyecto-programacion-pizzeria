@@ -75,13 +75,13 @@ def oferta_2(precio_final):
     
     print("se te aplica oferta 2")
     
-    precio_final= precio_final-precio_final*(1/20) # aplicamos un 5%
+    precio_final= precio_final*(1/20) # aplicamos un 5%
 
 def oferta_3(lista_productos,precio_final):
     
     print("se te aplica oferta 3")
     
-    precio_final = precio_final -precio_final*(len(lista_productos)/100) # n+m en cuanto a bebidas y pizzas es lo mismo que len lista de productos
+    precio_final = precio_final*(len(lista_productos)/100) # n+m en cuanto a bebidas y pizzas es lo mismo que len lista de productos
 
     return precio_final
 
@@ -113,7 +113,7 @@ def menu_ofertas(lista_productos):
                  print("se te aplica la segunda oferta")
                  precio_oferta = oferta_2(precio_final) # llamamos a oferta 2 devuelve el precio
 
-                 return precio_oferta
+                 return 
 
 
             else:

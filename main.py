@@ -5,6 +5,7 @@ from src.modulos.calculos import calculo_precio_pizzas
 from src.modulos.cambiar_temporada import cambiar_temporada
 from src.modulos.pedidos import mostrar_carrito
 from src.modulos.ofertas import  menu_ofertas
+from src.modulos.ticket import print_ticket
 
 from src.modulos.seleccionar_bebidas import seleccionar_bebida, mostrar_bebidas
 
@@ -52,7 +53,7 @@ while opcion_general > 0 and opcion_general < 4:
              opcion_otros = menu_otros()
 
              if (opcion_otros == 1): # ofertas solo sirve para saber en este momento si se le aplica o no una oferta
-                menu_ofertas()
+                menu_ofertas(lista_productos)
 
              elif (opcion_otros == 2): # cambiar temporada
 
@@ -65,7 +66,7 @@ while opcion_general > 0 and opcion_general < 4:
 
             
              else: # opcion 4
-                print("tiket")
+                print(print_ticket(lista_productos))
 
                 
     
