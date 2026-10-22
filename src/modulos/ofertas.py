@@ -6,7 +6,7 @@
 
 # 3. n pizzas y m bebidas si y solo si n+m >=5 ^ n+m <=20 entonces n+m% de descuento total
 from src.datos.bebidas import bebidas_precio
-from src.modulos.seleccionar_bebidas import seleccionar_bebida, mostrar_bebidas
+from src.modulos.seleccionar_bebidas import seleccionar_bebida
 
 
 def ofertas(lista_productos): # funcion que mira que oferta hay que aplicar
