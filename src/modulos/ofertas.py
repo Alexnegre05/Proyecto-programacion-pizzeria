@@ -71,12 +71,16 @@ def oferta_1(lista_productos):
 
     
 
-def oferta_2(lista_productos):
+def oferta_2(precio_final):
     
     print("se te aplica oferta 2")
-    pass
+    
+    precio_final= precio_final-precio_final*(1/20) # aplicamos un 5%
 
-def oferta_3(lista_productos):
+def oferta_3(lista_productos,precio_final):
     
     print("se te aplica oferta 3")
-    pass
+    
+    precio_final = precio_final -precio_final*(len(lista_productos)/100) # n+m en cuanto a bebidas y pizzas es lo mismo que len lista de productos
+
+    return precio_final

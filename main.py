@@ -51,21 +51,20 @@ while opcion_general > 0 and opcion_general < 4:
         case 3: # otros
              opcion_otros = menu_otros()
 
-             if (opcion_otros == 1):
+             if (opcion_otros == 1): # ofertas solo sirve para saber en este momento si se le aplica o no una oferta
                 
                 oferta_seleccionada = ofertas(lista_productos) # funcion que mira todas las ofertas
 
                 if (oferta_seleccionada != 0): # si hay una oferta_seleccionada
                     
                     if (oferta_seleccionada == 1):
-                       lista_productos = oferta_1(lista_productos)
-                       print(lista_productos)
-                    
+                       print("se te aplica la primera oferta")
+
                     elif (oferta_seleccionada == 2):
-                        oferta_2()
+                        print("se te aplica la segunda oferta")
 
                     else:
-                        oferta_3()
+                        print("se te aplica la tercera oferta")
 
 
 
@@ -77,6 +76,26 @@ while opcion_general > 0 and opcion_general < 4:
 
                 carrito = mostrar_carrito(lista_productos)
                 print(carrito)
+
+            
+             else: # opcion 4
+                print("tiket")
+
+                precio_final = 0
+                oferta_seleccionada = ofertas(lista_productos) # funcion que mira todas las ofertas
+
+                if (oferta_seleccionada != 0): # si hay una oferta_seleccionada
+                    
+                    if (oferta_seleccionada == 1):
+                       lista_productos = oferta_1(lista_productos)
+                       print(lista_productos)
+                    
+                    elif (oferta_seleccionada == 2):
+                        oferta_2(precio_final)
+
+                    else:
+                        oferta_3(lista_productos, precio_final)
+    
 
    
                 
