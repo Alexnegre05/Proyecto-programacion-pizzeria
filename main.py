@@ -52,7 +52,7 @@ while opcion_general > 0 and opcion_general < 4:
              opcion_otros = menu_otros()
 
              if (opcion_otros == 1): # ofertas solo sirve para saber en este momento si se le aplica o no una oferta
-                menu_ofertas()
+                menu_ofertas(lista_productos)
 
              elif (opcion_otros == 2): # cambiar temporada
 
