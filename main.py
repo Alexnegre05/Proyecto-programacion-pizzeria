@@ -4,7 +4,7 @@ from src.modulos.catalogo_productos import obtener_catalogo
 from src.modulos.calculos import calculo_precio_pizzas
 from src.modulos.cambiar_temporada import cambiar_temporada
 from src.modulos.pedidos import mostrar_carrito
-from src.modulos.ofertas import ofertas,oferta_1, oferta_2, oferta_3
+from src.modulos.ofertas import ofertas,oferta_1, oferta_2, oferta_3, menu_ofertas
 
 from src.modulos.seleccionar_bebidas import seleccionar_bebida, mostrar_bebidas
 
@@ -52,21 +52,7 @@ while opcion_general > 0 and opcion_general < 4:
              opcion_otros = menu_otros()
 
              if (opcion_otros == 1): # ofertas solo sirve para saber en este momento si se le aplica o no una oferta
-                
-                oferta_seleccionada = ofertas(lista_productos) # funcion que mira todas las ofertas
-
-                if (oferta_seleccionada != 0): # si hay una oferta_seleccionada
-                    
-                    if (oferta_seleccionada == 1):
-                       print("se te aplica la primera oferta")
-
-                    elif (oferta_seleccionada == 2):
-                        print("se te aplica la segunda oferta")
-
-                    else:
-                        print("se te aplica la tercera oferta")
-
-
+                menu_ofertas()
 
              elif (opcion_otros == 2): # cambiar temporada
 
@@ -81,20 +67,7 @@ while opcion_general > 0 and opcion_general < 4:
              else: # opcion 4
                 print("tiket")
 
-                precio_final = 0
-                oferta_seleccionada = ofertas(lista_productos) # funcion que mira todas las ofertas
-
-                if (oferta_seleccionada != 0): # si hay una oferta_seleccionada
-                    
-                    if (oferta_seleccionada == 1):
-                       lista_productos = oferta_1(lista_productos)
-                       print(lista_productos)
-                    
-                    elif (oferta_seleccionada == 2):
-                        oferta_2(precio_final)
-
-                    else:
-                        oferta_3(lista_productos, precio_final)
+                
     
 
    

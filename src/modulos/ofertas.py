@@ -84,3 +84,43 @@ def oferta_3(lista_productos,precio_final):
     precio_final = precio_final -precio_final*(len(lista_productos)/100) # n+m en cuanto a bebidas y pizzas es lo mismo que len lista de productos
 
     return precio_final
+
+
+
+
+# funcion que calcula las ofertas
+def menu_ofertas(lista_productos):
+
+    precio_final = 0 
+
+    for i in range(0, len(lista_productos)):
+
+        precio_final = precio_final + lista_productos[1] # el 1 es el precio 
+
+        oferta_seleccionada = ofertas(lista_productos) # funcion que mira todas las ofertas
+
+        if (oferta_seleccionada != 0): # si hay una oferta_seleccionada
+                    
+            if (oferta_seleccionada == 1):
+                       
+                lista_productos = oferta_1(lista_productos) # llamamos a oferta 1
+                print(lista_productos)
+
+                return lista_productos
+
+            elif (oferta_seleccionada == 2):
+
+                 print("se te aplica la segunda oferta")
+                 precio_oferta = oferta_2(precio_final) # llamamos a oferta 2 devuelve el precio
+
+                 return precio_oferta
+
+
+            else:
+
+                print("se te aplica la tercera oferta")
+                precio_oferta = oferta_3(lista_productos, precio_final)
+
+                return precio_oferta
+
+                # llamamos a oferta 3
