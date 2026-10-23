@@ -68,7 +68,7 @@ def oferta_1(lista_productos):
     bebida_seleccionada.append(1) # añadir que es categoria bebida con un 1
     lista_productos.append(bebida_seleccionada)
 
-    return lista_productos  # devolvemos la bebida seleccionada
+    return 0  # devolvemos la bebida seleccionada
 
     
 
@@ -77,6 +77,8 @@ def oferta_2(precio_final):
     print("se te aplica oferta 2")
     
     precio_final= precio_final*(1/20) # aplicamos un 5%
+
+    return precio_final
 
 def oferta_3(lista_productos,precio_final):
     
@@ -114,7 +116,7 @@ def menu_ofertas(lista_productos):
                  print("se te aplica la segunda oferta")
                  precio_oferta = oferta_2(precio_final) # llamamos a oferta 2 devuelve el precio
 
-                 return 
+                 return precio_oferta
 
 
             else:
@@ -125,3 +127,5 @@ def menu_ofertas(lista_productos):
                 return precio_oferta
 
                 # llamamos a oferta 3
+
+    return 0
