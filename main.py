@@ -44,7 +44,7 @@ while opcion_general > 0 and opcion_general < 4:
             else:
                 bebidas = seleccionar_bebida()
 
-                pizzas.append(1) # añadimos que es una bebida popniendo un 1, para saber en ofertas que es exactamente este producto
+                bebidas.append(1) # añadimos que es una bebida popniendo un 1, para saber en ofertas que es exactamente este producto
                 lista_productos.append(bebidas)
 
                 
