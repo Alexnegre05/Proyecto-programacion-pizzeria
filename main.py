@@ -8,7 +8,7 @@ from src.modulos.ofertas import  menu_ofertas, mostrar_ofertas
 from src.modulos.ticket import print_ticket
 
 from src.modulos.seleccionar_bebidas import seleccionar_bebida, mostrar_bebidas
-
+from src.modulos.mostrar_ingredientes import mostrar_ingredientes
 lista_productos = []
 
 
@@ -31,7 +31,7 @@ while opcion_general > 0 and opcion_general < 4:
                     lista_productos.append(pizzas)
                         
                 case 3:
-                    print("en desarrollo")
+                    mostrar_ingredientes()
                         
            
                     
