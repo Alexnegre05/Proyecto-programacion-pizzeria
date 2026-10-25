@@ -8,6 +8,11 @@
 from src.datos.bebidas import bebidas_precio
 from src.modulos.seleccionar_bebidas import seleccionar_bebida
 
+def mostrar_ofertas():
+    print("\n")
+    print("1 2 pizzas-> 1 bebida gratis")
+    print("2 4 pizzas -> 5 % en descuento")
+    print(" 3 si tus productos en total estan entre 5 y 20 se te aplicara un descuento en porcentaje de la suma de tus productos")
 
 def ofertas(lista_productos): # funcion que mira que oferta hay que aplicar
 

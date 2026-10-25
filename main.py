@@ -4,7 +4,7 @@ from src.modulos.catalogo_productos import obtener_catalogo
 from src.modulos.calculos import calculo_precio_pizzas
 from src.modulos.cambiar_temporada import cambiar_temporada
 from src.modulos.pedidos import mostrar_carrito
-from src.modulos.ofertas import  menu_ofertas
+from src.modulos.ofertas import  menu_ofertas, mostrar_ofertas
 from src.modulos.ticket import print_ticket
 
 from src.modulos.seleccionar_bebidas import seleccionar_bebida, mostrar_bebidas
@@ -41,7 +41,7 @@ while opcion_general > 0 and opcion_general < 4:
             if (opcion_bebidas == 1):
                 mostrar_bebidas()
 
-            else:
+            elif (opcion_bebidas == 2):
                 bebidas = seleccionar_bebida()
 
                 bebidas.append(1) # añadimos que es una bebida popniendo un 1, para saber en ofertas que es exactamente este producto
@@ -53,7 +53,7 @@ while opcion_general > 0 and opcion_general < 4:
              opcion_otros = menu_otros()
 
              if (opcion_otros == 1): # ofertas solo sirve para saber en este momento si se le aplica o no una oferta
-                menu_ofertas(lista_productos)
+                mostrar_ofertas()
 
              elif (opcion_otros == 2): # cambiar temporada
 
@@ -65,7 +65,7 @@ while opcion_general > 0 and opcion_general < 4:
                 print(carrito)
 
             
-             else: # opcion 4
+             elif (opcion_otros == 4): # opcion 4
                 print(print_ticket(lista_productos))
 
                 
