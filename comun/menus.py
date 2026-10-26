@@ -1,4 +1,4 @@
-from src.modulos.try_except import comprovar_try_except
+from comun.try_except import comprovar_try_except
 
 
 

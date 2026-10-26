@@ -1,14 +1,14 @@
 
-from src.menus import menu_principal,menu_pizzas,menu_bebidas,menu_otros # carpeta.carpeta., etc para importar
-from src.modulos.catalogo_productos import obtener_catalogo
-from src.modulos.calculos import calculo_precio_pizzas
-from src.modulos.cambiar_temporada import cambiar_temporada
-from src.modulos.pedidos import mostrar_carrito
-from src.modulos.ofertas import  menu_ofertas, mostrar_ofertas
-from src.modulos.ticket import print_ticket
+from comun.menus import menu_principal,menu_pizzas,menu_bebidas,menu_otros # carpeta.carpeta., etc para importar
+from version_1.src.modulos.catalogo_productos import obtener_catalogo
+from version_1.src.modulos.calculos import calculo_precio_pizzas
+from comun.cambiar_temporada import cambiar_temporada
+from version_1.src.modulos.pedidos import mostrar_carrito
+from version_1.src.modulos.ofertas import  menu_ofertas, mostrar_ofertas
+from version_1.src.modulos.ticket import print_ticket
 
-from src.modulos.seleccionar_bebidas import seleccionar_bebida, mostrar_bebidas
-from src.modulos.mostrar_ingredientes import mostrar_ingredientes
+from version_1.src.modulos.seleccionar_bebidas import seleccionar_bebida, mostrar_bebidas
+from version_1.src.modulos.mostrar_ingredientes import mostrar_ingredientes
 
 
 lista_productos = []

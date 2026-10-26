@@ -1,9 +1,9 @@
 
-from src.datos.pizzas import pizzerias_ingredientes
+from version_1.src.datos.pizzas import pizzerias_ingredientes
 
-from src.modulos.catalogo_productos import obtener_catalogo
+from version_1.src.modulos.catalogo_productos import obtener_catalogo
 
-from src.modulos.try_except import comprovar_try_except
+from comun.try_except import comprovar_try_except
 
 def escoger_pizza_usuario():
 

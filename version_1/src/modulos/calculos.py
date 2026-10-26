@@ -1,8 +1,8 @@
 
-from src.datos.ingredientes import ingrediente_precio, ingredientes_gramos
-from src.datos.temporada import temporada
+from version_1.src.datos.ingredientes import ingrediente_precio, ingredientes_gramos
+from version_1.src.datos.temporada import temporada
 
-from src.modulos.seleccionar_pizza import escoger_pizza_usuario
+from version_1.src.modulos.seleccionar_pizza import escoger_pizza_usuario
 
 def calculo_precio_pizzas():
 

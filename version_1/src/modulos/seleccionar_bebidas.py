@@ -1,7 +1,7 @@
 
-from src.datos.bebidas import bebidas_precio
+from version_1.src.datos.bebidas import bebidas_precio
 
-from src.modulos.try_except import comprovar_try_except
+from comun.try_except import comprovar_try_except
 
 def mostrar_bebidas():
 

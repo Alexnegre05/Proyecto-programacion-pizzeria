@@ -1,6 +1,6 @@
-from src.datos.temporada import temporada
+from version_1.src.datos.temporada import temporada
 
-from src.modulos.try_except import comprovar_try_except
+from comun.try_except import comprovar_try_except
 
 
 def menu_actual_normal(): # si la temporada es la normal tenemos este menu
