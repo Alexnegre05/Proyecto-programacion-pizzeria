@@ -1,4 +1,4 @@
-
+from src.modulos.try_except import comprovar_try_except
 
 
 
@@ -17,7 +17,8 @@ def menu_principal():
 
     print("opcion 3 otros")
 
-    opcion = int(input("selecciona una opcion de el menu: "))
+    
+    opcion = comprovar_try_except("selecciona una opcion de el menu: ")
 
     while (opcion < 0 or opcion > 3): # while que compreuba si el usuario ah introducido un numero correcto
     # si no lo hace vuelve a mostra el menu con las opciones
@@ -34,7 +35,8 @@ def menu_principal():
 
         print("opcion 3 otros") # aqui añadimos todo lo referente a ofertas, temporadas...
 
-        opcion = int(input("selecciona una opcion correcta de el menu: "))
+        opcion = comprovar_try_except("selecciona una opcion correcta de el menu: ")
+       
 
     return opcion # devolvemos la opcion
 
@@ -60,7 +62,9 @@ def menu_pizzas():
     print("opcion 3 seleccionar ingredientes") # podemos ver los ingredienets y su coste
 
 
-    opcion = int(input("selecciona una opcion de el menu: "))
+    opcion = comprovar_try_except("selecciona una opcion de el menu: ")
+
+    
 
     while (opcion < 0 or opcion > 3): # comprovamos que la opcion sea correcta si no lo es volvemos a mostrar el menu
 
@@ -76,7 +80,7 @@ def menu_pizzas():
         
         print("opcion 3 seleccionar ingredientes") 
 
-        opcion = int(input("selecciona una opcion correcta de el menu: "))
+        opcion = comprovar_try_except("selecciona una opcion correcta de el menu: ")
     
     return opcion # devolvemos la opcion
 
@@ -97,7 +101,7 @@ def menu_bebidas():
     
     print("opcion 2 seleccionar bebidas")
 
-    opcion = int(input("selecciona una opcion de el menu: "))
+    opcion = comprovar_try_except("selecciona una opcion de el menu: ")
 
     while (opcion < 0 or opcion > 2): # comprovamos que la opcion sea correcta si no lo es volvemos a mostrar el menu
 
@@ -111,7 +115,7 @@ def menu_bebidas():
         
         print("opcion 2 seleccionar bebidas")
 
-        opcion = int(input("selecciona una opcion correcta de el menu: "))
+        opcion = comprovar_try_except("selecciona una opcion correcta de el menu: ")
 
     return opcion # devolvemos la ocpion
 
@@ -134,7 +138,7 @@ def menu_otros():
     
     print("opcion 4 tiquet final") # para ver el tiquet final
 
-    opcion = int(input("selecciona una opcion de el menu: "))
+    opcion = comprovar_try_except("selecciona una opcion de el menu: ")
 
     while (opcion < 0 or opcion > 4):  # comprovamos que la opcion sea correcta si no lo es volvemos a mostrar el menu
         
@@ -152,7 +156,7 @@ def menu_otros():
         
         print("opcion 4 tiquet final")
 
-        opcion = int(input("selecciona una opcion correcta de el menu: "))
+        opcion = comprovar_try_except("selecciona una opcion correcta de el menu: ")
 
     return opcion  # devolvemos la opcion
 

@@ -1,4 +1,4 @@
-from ..datos.pizzas import pizzerias_ingredientes as lista_pizzas
+from src.datos.pizzas import pizzerias_ingredientes as lista_pizzas
 
 #recorrela lista de pizzas y mostarla en un formato editado 
 #for para REcorrela y mostrarla 

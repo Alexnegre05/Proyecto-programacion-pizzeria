@@ -67,3 +67,6 @@ por ultimo las ofertas hay 3, la primera es  2 pizzas y solo 2 pizzas donde incl
 
 La segunda es de 4 pizzas y solo 4 pizzas se aplica un descuento de 5%  en el precio total
 y finalmente una ultima oferta que si y solo si tienes mas o igual de 5 bebidas y pizzas en conjunto y menso de 20 se te aplica un x porcentaje sumando el numero de pizzas y bebidas
+
+
+Creadores = Alex Negre, Andres Ponce

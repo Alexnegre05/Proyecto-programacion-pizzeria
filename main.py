@@ -9,6 +9,8 @@ from src.modulos.ticket import print_ticket
 
 from src.modulos.seleccionar_bebidas import seleccionar_bebida, mostrar_bebidas
 from src.modulos.mostrar_ingredientes import mostrar_ingredientes
+
+
 lista_productos = []
 
 

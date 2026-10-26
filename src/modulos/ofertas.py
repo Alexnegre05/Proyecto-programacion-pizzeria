@@ -12,13 +12,14 @@ def mostrar_ofertas():
     print("\n")
     print("1 2 pizzas-> 1 bebida gratis")
     print("2 4 pizzas -> 5 % en descuento")
-    print(" 3 si tus productos en total estan entre 5 y 20 se te aplicara un descuento en porcentaje de la suma de tus productos")
+    print("3 si tus productos en total estan entre 5 y 20 se te aplicara un descuento en porcentaje de la suma de tus productos")
 
 def ofertas(lista_productos): # funcion que mira que oferta hay que aplicar
 
     print("\n")
 
     if (len(lista_productos) < 2): # si la longitud es menor a 2 no hay ninguna oferta a ofrecer
+
         print("no hay ninguna oferta")
 
         return 0 # 0 indica que no hay ofertas
@@ -33,6 +34,7 @@ def ofertas(lista_productos): # funcion que mira que oferta hay que aplicar
 
 
             if (lista_productos[i][2] == 0): # esto es una pizza, el segundo valor recibe un 0 si es pizza o un 1 el formato es (nombre,precio,numero)
+                
                 count_pizzas = count_pizzas + 1
 
             else: # esto es una bebida
@@ -41,13 +43,17 @@ def ofertas(lista_productos): # funcion que mira que oferta hay que aplicar
 
         # dependiendo de el caso te returna un valor u otro eso indica que oferta se te ha aplicado
         if (count_pizzas == 2):
+
             print("oferta 1")
+
             return 1
 
         else:
 
             if (count_pizzas == 4):
+
                 print("oferta 2")
+
                 return 2
 
             elif ((count_pizzas + count_bebidas) >= 5 and (count_pizzas + count_bebidas) <= 20):
@@ -71,6 +77,7 @@ def oferta_1(lista_productos):
     bebida_seleccionada[1] = 0 # ponemos el precio de esta bebida en exclusiva a 0, recibimos una lista con (nombre bebida, precio)
 
     bebida_seleccionada.append(1) # añadir que es categoria bebida con un 1
+    
     lista_productos.append(bebida_seleccionada)
 
     return 0  # devolvemos la bebida seleccionada
