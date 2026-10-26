@@ -3,6 +3,7 @@ from src.datos.pizzas import pizzerias_ingredientes
 
 from src.modulos.catalogo_productos import obtener_catalogo
 
+from src.modulos.try_except import comprovar_try_except
 
 def escoger_pizza_usuario():
 
@@ -14,13 +15,13 @@ def escoger_pizza_usuario():
 
     print("\n")
 
-    pizza_seleccionada = int(input("selecciona numero de que pizza quieres: ")) # pedimos un numero 
+    pizza_seleccionada = comprovar_try_except("selecciona numero de que pizza quieres: ") # pedimos un numero 
     # este numero es el indice de el diccionario
     
     # comprovamos que el nombre es correcto
     while(pizza_seleccionada < 1 or pizza_seleccionada > 20):
         
-        pizza_seleccionada = int(input("selecciona numero correcto: "))
+       comprovar_try_except("selecciona numero correcto: ")
 
 
 

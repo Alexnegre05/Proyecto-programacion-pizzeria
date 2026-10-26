@@ -1,6 +1,6 @@
 from src.datos.temporada import temporada
 
-
+from src.modulos.try_except import comprovar_try_except
 
 
 def menu_actual_normal(): # si la temporada es la normal tenemos este menu
@@ -13,7 +13,8 @@ def menu_actual_normal(): # si la temporada es la normal tenemos este menu
     print("2 cambiar a temporada alta")
 
     print("\n")
-    opcion = int(input("escoge una opcion"))
+
+    opcion = comprovar_try_except("escoge una opcion: ")
 
     return opcion
     
@@ -53,7 +54,8 @@ def menu_actual_baja(): # si la temporada es la normal tenemos este menu
     print("2 cambiar a temporada alta")
 
     print("\n")
-    opcion = int(input("escoge una opcion"))
+    
+    opcion = comprovar_try_except("escoge una opcion: ")
 
     return opcion
     
@@ -70,6 +72,7 @@ def cambiar_si_actual_baja(): # si la actual es la normal mostramos esto
 
             
         print("escoge una opcion correcta")
+
         opcion = menu_actual_baja()
 
     # dependiendo de la opcion se selecciona un valor u otro
@@ -93,7 +96,8 @@ def menu_actual_alta(): # si la temporada es la normal tenemos este menu
     print("2 cambiar a temporada baja")
 
     print("\n")
-    opcion = int(input("escoge una opcion"))
+    
+    opcion = comprovar_try_except("escoge una opcion: ")
 
     return opcion
     
