@@ -1,5 +1,5 @@
-from src.datos.ingredientes import ingrediente_precio
-from src.datos.ingredientes import ingredientes_gramos
+from version_1.src.datos.ingredientes import ingrediente_precio
+from version_1.src.datos.ingredientes import ingredientes_gramos
 
 def mostrar_ingredientes():
 

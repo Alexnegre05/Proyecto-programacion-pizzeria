@@ -1,5 +1,5 @@
 from datetime import datetime # importamos el modula para trabajar con el tiempo
-from src.modulos.ofertas import menu_ofertas
+from version_1.src.modulos.ofertas import menu_ofertas
 IVA = 0.21
 def print_ticket(lista_productos):
 
