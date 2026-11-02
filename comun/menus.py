@@ -1,27 +1,9 @@
 from comun.try_except import comprovar_try_except
 
+if "__main__" == __name__:
 
-
-# menu principal devuelve opcion
-def menu_principal():
-
-    print("\n")
-
-    print("menu")
-
-    print("opcion 0 salir")
-
-    print("opcion 1 pizzas")
-
-    print("opcion 2 bebidas")
-
-    print("opcion 3 otros")
-
-    
-    opcion = comprovar_try_except("selecciona una opcion de el menu: ")
-
-    while (opcion < 0 or opcion > 3): # while que compreuba si el usuario ah introducido un numero correcto
-    # si no lo hace vuelve a mostra el menu con las opciones
+    # menu principal devuelve opcion
+    def menu_principal():
 
         print("\n")
 
@@ -33,78 +15,82 @@ def menu_principal():
 
         print("opcion 2 bebidas")
 
-        print("opcion 3 otros") # aqui añadimos todo lo referente a ofertas, temporadas...
+        print("opcion 3 otros")
 
-        opcion = comprovar_try_except("selecciona una opcion correcta de el menu: ")
-       
+        
+        opcion = comprovar_try_except("selecciona una opcion de el menu: ")
 
-    return opcion # devolvemos la opcion
+        while (opcion < 0 or opcion > 3): # while que compreuba si el usuario ah introducido un numero correcto
+        # si no lo hace vuelve a mostra el menu con las opciones
 
+            print("\n")
 
+            print("menu")
 
+            print("opcion 0 salir")
 
+            print("opcion 1 pizzas")
 
+            print("opcion 2 bebidas")
 
+            print("opcion 3 otros") # aqui añadimos todo lo referente a ofertas, temporadas...
 
-# menu de solo pizas
-def menu_pizzas():
+            opcion = comprovar_try_except("selecciona una opcion correcta de el menu: ")
+        
 
-    print("\n")
-
-    print("menu")
-
-    print("opcion 0 salir")
-
-    print("opcion 1 mirar pizzas")  # muestra todas las pizza
-
-    print("opcion 2 seleccionar pizza") # aqui la podemos añadir a el carrito una pizza, la cantidad de gramos totales y el desglose de precios
-    
-    print("opcion 3 seleccionar ingredientes") # podemos ver los ingredienets y su coste
+        return opcion # devolvemos la opcion
 
 
-    opcion = comprovar_try_except("selecciona una opcion de el menu: ")
 
-    
 
-    while (opcion < 0 or opcion > 3): # comprovamos que la opcion sea correcta si no lo es volvemos a mostrar el menu
+
+
+
+    # menu de solo pizas
+    def menu_pizzas():
 
         print("\n")
 
         print("menu")
 
         print("opcion 0 salir")
+
+        print("opcion 1 mirar pizzas")  # muestra todas las pizza
+
+        print("opcion 2 seleccionar pizza") # aqui la podemos añadir a el carrito una pizza, la cantidad de gramos totales y el desglose de precios
         
-        print("opcion 1 mirar pizzas")  
+        print("opcion 3 seleccionar ingredientes") # podemos ver los ingredienets y su coste
+
+
+        opcion = comprovar_try_except("selecciona una opcion de el menu: ")
+
         
-        print("opcion 2 seleccionar pizza")  
+
+        while (opcion < 0 or opcion > 3): # comprovamos que la opcion sea correcta si no lo es volvemos a mostrar el menu
+
+            print("\n")
+
+            print("menu")
+
+            print("opcion 0 salir")
+            
+            print("opcion 1 mirar pizzas")  
+            
+            print("opcion 2 seleccionar pizza")  
+            
+            print("opcion 3 seleccionar ingredientes") 
+
+            opcion = comprovar_try_except("selecciona una opcion correcta de el menu: ")
         
-        print("opcion 3 seleccionar ingredientes") 
-
-        opcion = comprovar_try_except("selecciona una opcion correcta de el menu: ")
-    
-    return opcion # devolvemos la opcion
+        return opcion # devolvemos la opcion
 
 
 
 
 
 
-def menu_bebidas():
-    
-    print("\n")
-
-    print("menu")
-
-    print("opcion 0 salir")
-    
-    print("opcion 1 mirar bebidas")
-    
-    print("opcion 2 seleccionar bebidas")
-
-    opcion = comprovar_try_except("selecciona una opcion de el menu: ")
-
-    while (opcion < 0 or opcion > 2): # comprovamos que la opcion sea correcta si no lo es volvemos a mostrar el menu
-
+    def menu_bebidas():
+        
         print("\n")
 
         print("menu")
@@ -115,51 +101,48 @@ def menu_bebidas():
         
         print("opcion 2 seleccionar bebidas")
 
-        opcion = comprovar_try_except("selecciona una opcion correcta de el menu: ")
+        opcion = comprovar_try_except("selecciona una opcion de el menu: ")
 
-    return opcion # devolvemos la ocpion
+        while (opcion < 0 or opcion > 2): # comprovamos que la opcion sea correcta si no lo es volvemos a mostrar el menu
+
+            print("\n")
+
+            print("menu")
+
+            print("opcion 0 salir")
+            
+            print("opcion 1 mirar bebidas")
+            
+            print("opcion 2 seleccionar bebidas")
+
+            opcion = comprovar_try_except("selecciona una opcion correcta de el menu: ")
+
+        return opcion # devolvemos la ocpion
 
 
 
 
 
-# menu de otras opciones
-def menu_otros():
+    # menu de otras opciones
+    def menu_otros():
 
-    print("\n")
-
-    print("opcion 0 salir")
-    
-    print("opcion 1 ofertas") # para poder seleccionar ofertas
-    
-    print("opcion 2 seleccionar temporada") # para poder seleccionar entre una de 3 temporadas
-    
-    print("opcion 3 carrito") # para quitar cosas de el carrito y ver lo que hay
-    
-    print("opcion 4 tiquet final") # para ver el tiquet final
-
-    opcion = comprovar_try_except("selecciona una opcion de el menu: ")
-
-    while (opcion < 0 or opcion > 4):  # comprovamos que la opcion sea correcta si no lo es volvemos a mostrar el menu
-        
         print("\n")
-
-        print("menu")
 
         print("opcion 0 salir")
         
-        print("opcion 1 ofertas")
+        print("opcion 1 ofertas") # para poder seleccionar ofertas
         
-        print("opcion 2 seleccionar temporada")
+        print("opcion 2 seleccionar temporada") # para poder seleccionar entre una de 3 temporadas
         
-        print("opcion 3 carrito") 
+        print("opcion 3 carrito") # para quitar cosas de el carrito y ver lo que hay
         
-        print("opcion 4 tiquet final")
+        print("opcion 4 tiquet final") # para ver el tiquet final
 
-        opcion = comprovar_try_except("selecciona una opcion correcta de el menu: ")
+        opcion = comprovar_try_except("selecciona una opcion de el menu: ")
 
-    return opcion  # devolvemos la opcion
-
+        while (opcion < 0 or opcion > 4):  # comprovamos que la opcion sea correcta si no lo es volvemos a mostrar el menu
+            
+            print("\n")
 
 
 
@@ -197,19 +180,23 @@ def menu_ingredientes(): # en este menu se puede escoger si solo ver los ingredi
 def menu_carrito(): # sirve para preguntar
     # a el usuario si quiere o no quitar cosas de el carrito o si quiere solo ver que productos tiene
 
-    print("\n")
+            print("opcion 0 salir")
+            
+            print("opcion 1 ofertas")
+            
+            print("opcion 2 seleccionar temporada")
+            
+            print("opcion 3 carrito") 
+            
+            print("opcion 4 tiquet final")
 
-    print("opcion 0 salir")
+            opcion = comprovar_try_except("selecciona una opcion correcta de el menu: ")
 
-    print("opcion 1 mostrar carrito")
+        return opcion  # devolvemos la opcion
 
-    print("opcion 2 quitar producto del carrito")
 
-    print("\n")
-
-    opcion = comprovar_try_except("selecciona una opcion de el menu: ")
-
-    while(opcion < 0 or opcion > 2):
+    def menu_carrito(): # sirve para preguntar
+        # a el usuario si quiere o no quitar cosas de el carrito o si quiere solo ver que productos tiene
 
         print("\n")
 
@@ -220,32 +207,44 @@ def menu_carrito(): # sirve para preguntar
         print("opcion 2 quitar producto del carrito")
 
         print("\n")
-        
-        opcion = comprovar_try_except("selecciona una opcion correcta de el menu: ")
 
-    return opcion # devolvemos la opcionç
+        opcion = comprovar_try_except("selecciona una opcion de el menu: ")
+
+        while(opcion < 0 or opcion > 2):
+
+            print("\n")
+
+            print("opcion 0 salir")
+
+            print("opcion 1 mostrar carrito")
+
+            print("opcion 2 quitar producto del carrito")
+
+            print("\n")
+
+            opcion = comprovar_try_except("selecciona una opcion correcta de el menu: ")
+
+        return opcion # devolvemos la opcion
 
 
+    def menu():
 
+    
 
-def menu():
+        opcion = menu_principal()
+        # seleccionamos con cada menu un submenu
 
-   
+        # si la opcion es 0 salimos de aqui(llegamos a el final)
+        if (opcion != 0):
 
-    opcion = menu_principal()
-    # seleccionamos con cada menu un submenu
+            if (opcion == 1):
+            
+                menu_pizzas()
 
-    # si la opcion es 0 salimos de aqui(llegamos a el final)
-    if (opcion != 0):
+            elif (opcion == 2):
 
-        if (opcion == 1):
-           
-           menu_pizzas()
+                menu_bebidas()
 
-        elif (opcion == 2):
+            else: # opcion 3
 
-            menu_bebidas()
-
-        else: # opcion 3
-
-            menu_otros()
+                menu_otros()

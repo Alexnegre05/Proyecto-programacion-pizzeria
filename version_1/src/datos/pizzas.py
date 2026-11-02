@@ -1,22 +1,24 @@
-pizzerias_ingredientes = {
-    "Canet": ["Sobrasada", "Alcaparras", "Olivas_negras"],
-    "Cabrera": ["Salsa_boloñesa", "Pimientos", "Baicon"],
-    "Vilasar": ["Pimientos", "Berenjenas", "Anchoas"],
-    "Arenys": ["Gambas_salteadas", "Ajo", "Perejil", "Atún"],
-    "Mataro": ["Queso_Roquefort", "Queso_Emmental", "Queso_Parmesano", "Queso_Mozzarella"],
-    "Sant Vicençs": ["Tomate", "Queso_Emmental", "Hierbas"],
-    "Caldetes": ["Queso_Mozzarella", "Alcaparras", "Queso_Emmental", "Base_pesto"],
-    "El Masnou": ["Baicon", "Cebolla", "Huevo"],
-    "Sant Pol": ["Jamon_dulce", "Piña"],
-    "Premia": ["Chistorra", "Huevo", "Pimientos"],
-    "Argentona": ["Jamon_dulce", "Baicon", "Champiñones"],
-    "Pineda": ["Queso_cabra", "Tomate", "Baicon", "Queso_Emmental"],
-    "Orrius": ["Calabacín", "Alcachofas", "Champiñones", "Cebolla", "Olivas_negras"],
-    "Tiana": ["Queso_Raclette", "Baicon", "Tomate"],
-    "Estrac": ["Crema_pistacho", "Queso_Mozzarella", "Cebolla", "Baicon", "Rúcula"],
-    "Malgrat": ["Pepperoni", "Butifarra_pages", "Cebolla", "Pimientos", "Salsa_picante"],
-    "torrembo": ["Setas_temporada", "Butifarra_pages", "Perejil", "Ajo"],
-    "Maresme": ["Base_queso", "Salmón_ahumado", "Queso_Brie", "Mermelada_tomate_vainilla", "Eneldo"],
-    "Ocata": ["Base_queso", "Foie_mi-cuit", "Queso_Brie", "Cebolla_caramelizada", "Crema_balsámica"],
-    "Sant Iscle": ["Jamon_dulce", "Queso_Mozzarella"]
-}
+if "__main__" == __name__:
+    
+    pizzerias_ingredientes = {
+        "Canet": ["Sobrasada", "Alcaparras", "Olivas_negras"],
+        "Cabrera": ["Salsa_boloñesa", "Pimientos", "Baicon"],
+        "Vilasar": ["Pimientos", "Berenjenas", "Anchoas"],
+        "Arenys": ["Gambas_salteadas", "Ajo", "Perejil", "Atún"],
+        "Mataro": ["Queso_Roquefort", "Queso_Emmental", "Queso_Parmesano", "Queso_Mozzarella"],
+        "Sant Vicençs": ["Tomate", "Queso_Emmental", "Hierbas"],
+        "Caldetes": ["Queso_Mozzarella", "Alcaparras", "Queso_Emmental", "Base_pesto"],
+        "El Masnou": ["Baicon", "Cebolla", "Huevo"],
+        "Sant Pol": ["Jamon_dulce", "Piña"],
+        "Premia": ["Chistorra", "Huevo", "Pimientos"],
+        "Argentona": ["Jamon_dulce", "Baicon", "Champiñones"],
+        "Pineda": ["Queso_cabra", "Tomate", "Baicon", "Queso_Emmental"],
+        "Orrius": ["Calabacín", "Alcachofas", "Champiñones", "Cebolla", "Olivas_negras"],
+        "Tiana": ["Queso_Raclette", "Baicon", "Tomate"],
+        "Estrac": ["Crema_pistacho", "Queso_Mozzarella", "Cebolla", "Baicon", "Rúcula"],
+        "Malgrat": ["Pepperoni", "Butifarra_pages", "Cebolla", "Pimientos", "Salsa_picante"],
+        "torrembo": ["Setas_temporada", "Butifarra_pages", "Perejil", "Ajo"],
+        "Maresme": ["Base_queso", "Salmón_ahumado", "Queso_Brie", "Mermelada_tomate_vainilla", "Eneldo"],
+        "Ocata": ["Base_queso", "Foie_mi-cuit", "Queso_Brie", "Cebolla_caramelizada", "Crema_balsámica"],
+        "Sant Iscle": ["Jamon_dulce", "Queso_Mozzarella"]
+    }
