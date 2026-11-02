@@ -3,6 +3,34 @@ from comun.try_except import comprovar_try_except
 
 
 
+def seleccionar_opcion_programa():
+      
+    print("\n")
+
+    print("0 salir")
+
+    print("1 programa con datos compuestos")
+      
+    print("2 programa con clases")
+
+    opcion = comprovar_try_except("selecciona una opcion de el menu: ")
+
+    while(opcion < 0 or opcion > 2):
+            
+        print("\n")
+
+        print("0 salir")
+
+        print("1 programa con datos compuestos")
+      
+        print("2 programa con clases")
+
+        opcion = comprovar_try_except("selecciona una opcion correcta de el menu: ")
+
+    return opcion
+    
+
+            
 # menu principal devuelve opcion
 def menu_principal():
 
