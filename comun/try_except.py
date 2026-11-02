@@ -1,7 +1,7 @@
-if "__main__" == __name__:
+
         
-    # funcion general para ir comprovando tod el rato el try except
-    def comprovar_try_except(string):
+# funcion general para ir comprovando tod el rato el try except
+def comprovar_try_except(string):
         
         comprovar = 0 # variable para que en el try except si peta que se reinicie
 
@@ -16,3 +16,10 @@ if "__main__" == __name__:
                 comprovar = 0 # mantenemos comprovar a 0
 
         return opcion
+
+# Este bloque solo se deja al final si quieres hacer pruebas rápidas dentro de este mismo archivo
+if __name__ == "__main__":
+    # Ejemplo de prueba local:
+    # resultado = comprovar_try_except("Introduce un número: ")
+    # print(resultado)
+    pass

@@ -1,6 +1,6 @@
-if "__main__" == __name__:
+
     
-    pizzerias_ingredientes = {
+pizzerias_ingredientes = {
         "Canet": ["Sobrasada", "Alcaparras", "Olivas_negras"],
         "Cabrera": ["Salsa_boloñesa", "Pimientos", "Baicon"],
         "Vilasar": ["Pimientos", "Berenjenas", "Anchoas"],

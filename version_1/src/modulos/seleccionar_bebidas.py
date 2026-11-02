@@ -4,9 +4,9 @@ from version_1.src.datos.bebidas import bebidas_precio
 from comun.try_except import comprovar_try_except
 
 
-if "__main__" == __name__:
+
         
-    def mostrar_bebidas():
+def mostrar_bebidas():
 
         contador = 1 # sirve como indice para las bebidas
 
@@ -21,7 +21,7 @@ if "__main__" == __name__:
 
 
 
-    def seleccionar_bebida():
+def seleccionar_bebida():
 
         mostrar_bebidas()
 

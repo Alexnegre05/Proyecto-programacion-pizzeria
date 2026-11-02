@@ -1,9 +1,9 @@
 from comun.try_except import comprovar_try_except 
 
 
-if "__main__" == __name__:
+
         
-    def mostrar_carrito(lista_producto):
+def mostrar_carrito(lista_producto):
 
         
         if (len(lista_producto) != 0): # si hay elementos en el carrito
@@ -17,7 +17,7 @@ if "__main__" == __name__:
         else:
             return "\n no hay elementos en el carrito \n"
 
-    def quitar_producto_carrito(lista_producto):
+def quitar_producto_carrito(lista_producto):
 
 
         for i in range(0, len(lista_producto)):

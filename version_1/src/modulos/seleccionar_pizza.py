@@ -6,9 +6,9 @@ from version_1.src.modulos.catalogo_productos import obtener_catalogo
 from comun.try_except import comprovar_try_except
 
 
-if "__main__" == __name__:
+
         
-    def escoger_pizza_usuario():
+def escoger_pizza_usuario():
 
         obtener_catalogo()
 

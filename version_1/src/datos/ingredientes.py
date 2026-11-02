@@ -1,6 +1,5 @@
-if "__main__" == __name__:
-        
-    ingrediente_precio = {
+
+ingrediente_precio = {
         "Agua": 0.000002,
         "Sal": 0.00075,
         "Harina": 0.00125,
@@ -55,7 +54,7 @@ if "__main__" == __name__:
     }
 
 
-    ingredientes_gramos = {
+ingredientes_gramos = {
     "Agua": 81,
         "Sal": 3.5,
         "Harina": 135,

@@ -1,10 +1,10 @@
 from datetime import datetime # importamos el modula para trabajar con el tiempo
 from version_1.src.modulos.ofertas import menu_ofertas
 
-if "__main__" == __name__:
         
-    IVA = 0.21
-    def print_ticket(lista_productos):
+IVA = 0.21
+
+def print_ticket(lista_productos):
 
         tipo_iva = 0
         importe_total = 0

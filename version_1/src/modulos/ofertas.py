@@ -9,10 +9,10 @@
 from version_1.src.modulos.seleccionar_bebidas import seleccionar_bebida
 
 
-if "__main__" == __name__:
 
 
-    def mostrar_ofertas():
+
+def mostrar_ofertas():
 
         print("\n")
 
@@ -25,7 +25,7 @@ if "__main__" == __name__:
 
 
 
-    def ofertas(lista_productos): # funcion que mira que oferta hay que aplicar
+def ofertas(lista_productos): # funcion que mira que oferta hay que aplicar
 
         print("\n")
 
@@ -82,7 +82,7 @@ if "__main__" == __name__:
 
 
 
-    def oferta_1(lista_productos):
+def oferta_1(lista_productos):
         
         print("se te aplica oferta 1")
 
@@ -98,7 +98,7 @@ if "__main__" == __name__:
 
         
 
-    def oferta_2(precio_final):
+def oferta_2(precio_final):
         
         print("se te aplica oferta 2")
         
@@ -106,7 +106,7 @@ if "__main__" == __name__:
 
         return precio_final
 
-    def oferta_3(lista_productos,precio_final):
+def oferta_3(lista_productos,precio_final):
         
         print("se te aplica oferta 3")
         
@@ -117,8 +117,8 @@ if "__main__" == __name__:
 
 
 
-    # funcion que calcula las ofertas
-    def menu_ofertas(lista_productos):
+# funcion que calcula las ofertas
+def menu_ofertas(lista_productos):
 
         precio_final = 0 
 

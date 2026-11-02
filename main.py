@@ -10,6 +10,7 @@ from version_1.src.datos.ingredientes import ingrediente_precio, ingredientes_gr
 from version_1.src.modulos.modificar_ingredientes import modificar_gramos, modificar_precio
 from version_1.src.modulos.seleccionar_bebidas import seleccionar_bebida, mostrar_bebidas
 from version_1.src.modulos.mostrar_ingredientes import mostrar_ingredientes
+from comun.try_except import comprovar_try_except
 
 if "__main__" == __name__:
 
@@ -35,43 +36,39 @@ if "__main__" == __name__:
                         lista_productos.append(pizzas)
                             
                     case 3:
-                        mostrar_ingredientes()
+                        opcion_ingredientes = menu_ingredientes() # menu para indicar que quiere hacer el usuario
+
+                        if (opcion_ingredientes == 1):
+
+                            mostrar_ingredientes()
+
+                        elif (opcion_ingredientes == 2):
+
+                            ingredientes_gramos = modificar_gramos(ingredientes_gramos)
+
+                        elif (opcion_ingredientes == 3):
+
+                            ingrediente_precio = modificar_precio(ingrediente_precio)
                             
             
-                        
-            case 2:  # bebidas
-                opcion_bebidas = menu_bebidas()
-
-                    pizzas.append(0) # añadimos que es una pizza popniendo un0, para saber en ofertas que es exactamente este producto
-                    lista_productos.append(pizzas)
-                        
-                case 3:
-
-                    opcion_ingredientes = menu_ingredientes() # menu para indicar que quiere hacer el usuario
-
-                    if (opcion_ingredientes == 1):
-
-                        mostrar_ingredientes()
-
-                    elif (opcion_ingredientes == 2):
-
-                        ingredientes_gramos = modificar_gramos(ingredientes_gramos)
-
-                    elif (opcion_ingredientes == 3):
-
-                        ingrediente_precio = modificar_precio(ingrediente_precio)
+                    
+           
 
                         
            
                     
-        case 2:  # bebidas
-            opcion_bebidas = menu_bebidas()
+            case 2:  # bebidas
+                opcion_bebidas = menu_bebidas()
 
-                elif (opcion_bebidas == 2):
-                    bebidas = seleccionar_bebida()
+                if (opcion_bebidas == 1):
 
-                    bebidas.append(1) # añadimos que es una bebida popniendo un 1, para saber en ofertas que es exactamente este producto
-                    lista_productos.append(bebidas)
+                    mostrar_bebidas()
+
+                if (opcion_bebidas == 2):
+                        bebidas = seleccionar_bebida()
+
+                        bebidas.append(1) # añadimos que es una bebida popniendo un 1, para saber en ofertas que es exactamente este producto
+                        lista_productos.append(bebidas)
 
                     
 

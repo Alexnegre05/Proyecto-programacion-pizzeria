@@ -5,9 +5,9 @@ from version_1.src.datos.temporada import temporada
 from version_1.src.modulos.seleccionar_pizza import escoger_pizza_usuario
 
 
-if "__main__" == __name__:
+
         
-    def calculo_precio_pizzas():
+def calculo_precio_pizzas():
 
         lista = escoger_pizza_usuario() # devuelve una lista que escoge una pizza 
         # y devuelve la pizza y sus ingredientes

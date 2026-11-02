@@ -3,9 +3,8 @@ from version_1.src.datos.pizzas import pizzerias_ingredientes as lista_pizzas
 #recorrela lista de pizzas y mostarla en un formato editado 
 #for para REcorrela y mostrarla 
 
-if "__main__" == __name__:
-        
-    def obtener_catalogo ():
+
+def obtener_catalogo ():
         
         for i, (pizza,ingredientes) in enumerate(lista_pizzas.items(),start=1):
 

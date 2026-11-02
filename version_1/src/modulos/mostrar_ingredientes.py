@@ -1,9 +1,9 @@
 from version_1.src.datos.ingredientes import ingrediente_precio
 from version_1.src.datos.ingredientes import ingredientes_gramos
 
-if "__main__" == __name__:
+
         
-    def mostrar_ingredientes():
+def mostrar_ingredientes():
 
         print("\n")
 

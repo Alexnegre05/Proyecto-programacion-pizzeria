@@ -2,9 +2,9 @@ from version_1.src.datos.temporada import temporada
 
 from comun.try_except import comprovar_try_except
 
-if "__main__" == __name__:
+
         
-    def menu_actual_normal(): # si la temporada es la normal tenemos este menu
+def menu_actual_normal(): # si la temporada es la normal tenemos este menu
 
         print("opciones cambiar temporada")
         print("\n")
@@ -23,7 +23,7 @@ if "__main__" == __name__:
 
 
 
-    def cambiar_si_actual_normal(): # si la actual es la normal mostramos esto
+def cambiar_si_actual_normal(): # si la actual es la normal mostramos esto
 
         opcion = menu_actual_normal()
 
@@ -45,7 +45,7 @@ if "__main__" == __name__:
 
 
 
-    def menu_actual_baja(): # si la temporada es la normal tenemos este menu
+def menu_actual_baja(): # si la temporada es la normal tenemos este menu
 
         print("opciones cambiar temporada")
         print("\n")
@@ -64,7 +64,7 @@ if "__main__" == __name__:
 
 
 
-    def cambiar_si_actual_baja(): # si la actual es la normal mostramos esto
+def cambiar_si_actual_baja(): # si la actual es la normal mostramos esto
 
         opcion = menu_actual_baja()
 
@@ -87,7 +87,7 @@ if "__main__" == __name__:
 
 
 
-    def menu_actual_alta(): # si la temporada es la normal tenemos este menu
+def menu_actual_alta(): # si la temporada es la normal tenemos este menu
 
         print("opciones cambiar temporada")
         print("\n")
@@ -106,7 +106,7 @@ if "__main__" == __name__:
 
 
 
-    def cambiar_si_actual_alta(): # si la actual es la normal mostramos esto
+def cambiar_si_actual_alta(): # si la actual es la normal mostramos esto
 
         opcion = menu_actual_alta()
 
@@ -132,7 +132,7 @@ if "__main__" == __name__:
 
 
     # funcion que muestra la temporada actual
-    def mostrar_temporada_actual():
+def mostrar_temporada_actual():
 
         temporada_actual = temporada[0] # temporada es un multiplicador que varia entre 1 , 0,5 y 1,5 dependiendo de la opcion la temporada es una u otra
 
@@ -155,7 +155,7 @@ if "__main__" == __name__:
 
 
 
-    def cambiar_temporada():
+def cambiar_temporada():
 
     
         temporada_actual = mostrar_temporada_actual() # funcion que muestra la temporada actual en la que estamos

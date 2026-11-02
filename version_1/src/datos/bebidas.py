@@ -1,6 +1,6 @@
-if "__main__" == __name__:
+
     
-    bebidas_precio = {
+bebidas_precio = {
         "Agua": 1.5,
         "Aquarius":2,
         "Nestea":2,
