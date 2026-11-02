@@ -1,9 +1,9 @@
 
-from comun.menus import menu_principal,menu_pizzas,menu_bebidas,menu_otros # carpeta.carpeta., etc para importar
+from comun.menus import menu_principal,menu_pizzas,menu_bebidas,menu_otros, menu_carrito # carpeta.carpeta., etc para importar
 from version_1.src.modulos.catalogo_productos import obtener_catalogo
 from version_1.src.modulos.calculos import calculo_precio_pizzas
 from comun.cambiar_temporada import cambiar_temporada
-from version_1.src.modulos.pedidos import mostrar_carrito
+from version_1.src.modulos.pedidos import mostrar_carrito, quitar_producto_carrito
 from version_1.src.modulos.ofertas import  menu_ofertas, mostrar_ofertas
 from version_1.src.modulos.ticket import print_ticket
 
@@ -63,8 +63,16 @@ while opcion_general > 0 and opcion_general < 4:
 
              elif (opcion_otros == 3): # carrito
 
-                carrito = mostrar_carrito(lista_productos)
-                print(carrito)
+                opcion_carrito = menu_carrito()
+
+                if (opcion_carrito == 1):
+
+                    carrito = mostrar_carrito(lista_productos)
+                    print(carrito)
+
+                elif (opcion_carrito == 2):
+
+                   lista_productos =  quitar_producto_carrito(lista_productos) # que se pueda quitar un producto
 
             
              elif (opcion_otros == 4): # opcion 4
