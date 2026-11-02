@@ -1,12 +1,13 @@
 
-from comun.menus import menu_principal,menu_pizzas,menu_bebidas,menu_otros, menu_carrito # carpeta.carpeta., etc para importar
+from comun.menus import menu_principal,menu_pizzas,menu_bebidas,menu_otros, menu_carrito, menu_ingredientes # carpeta.carpeta., etc para importar
 from version_1.src.modulos.catalogo_productos import obtener_catalogo
 from version_1.src.modulos.calculos import calculo_precio_pizzas
 from comun.cambiar_temporada import cambiar_temporada
 from version_1.src.modulos.pedidos import mostrar_carrito, quitar_producto_carrito
 from version_1.src.modulos.ofertas import  menu_ofertas, mostrar_ofertas
 from version_1.src.modulos.ticket import print_ticket
-
+from version_1.src.datos.ingredientes import ingrediente_precio, ingredientes_gramos
+from version_1.src.modulos.modificar_ingredientes import modificar_gramos, modificar_precio
 from version_1.src.modulos.seleccionar_bebidas import seleccionar_bebida, mostrar_bebidas
 from version_1.src.modulos.mostrar_ingredientes import mostrar_ingredientes
 
@@ -41,8 +42,30 @@ if "__main__" == __name__:
             case 2:  # bebidas
                 opcion_bebidas = menu_bebidas()
 
-                if (opcion_bebidas == 1):
-                    mostrar_bebidas()
+                    pizzas.append(0) # añadimos que es una pizza popniendo un0, para saber en ofertas que es exactamente este producto
+                    lista_productos.append(pizzas)
+                        
+                case 3:
+
+                    opcion_ingredientes = menu_ingredientes() # menu para indicar que quiere hacer el usuario
+
+                    if (opcion_ingredientes == 1):
+
+                        mostrar_ingredientes()
+
+                    elif (opcion_ingredientes == 2):
+
+                        ingredientes_gramos = modificar_gramos(ingredientes_gramos)
+
+                    elif (opcion_ingredientes == 3):
+
+                        ingrediente_precio = modificar_precio(ingrediente_precio)
+
+                        
+           
+                    
+        case 2:  # bebidas
+            opcion_bebidas = menu_bebidas()
 
                 elif (opcion_bebidas == 2):
                     bebidas = seleccionar_bebida()

@@ -144,7 +144,41 @@ if "__main__" == __name__:
             
             print("\n")
 
-            print("menu")
+
+
+def menu_ingredientes(): # en este menu se puede escoger si solo ver los ingredientes o modificarlos
+
+    print("\n")
+
+    print("opcion 0 salir")
+
+    print("opcion 1 mostrar ingredientes actuales")
+
+    print("opcion 2 modificar gramos ingredientes")
+
+    print("opcion 3 modificar precio por gramo de lso ingredientes")
+
+    opcion = comprovar_try_except("selecciona una opcion de el menu: ")
+
+    while(opcion < 0 or opcion > 3):
+
+        print("\n")
+        
+        print("opcion 0 salir")
+        
+        print("opcion 1 mostrar ingredientes actuales")
+        
+        print("opcion 2 modificar gramos ingredientes")
+        
+        print("opcion 3 modificar precio por gramo de lso ingredientes")
+        
+        opcion = comprovar_try_except("selecciona una opcion correcta de el menu: ")
+
+    return opcion
+
+
+def menu_carrito(): # sirve para preguntar
+    # a el usuario si quiere o no quitar cosas de el carrito o si quiere solo ver que productos tiene
 
             print("opcion 0 salir")
             
