@@ -6,3 +6,5 @@ class Pizza(Producto):
         super().__init__(nombre, precio)
         
         self.ingredientes = ingredientes # Guardamos el parámetro específico de la subclase
+
+        
