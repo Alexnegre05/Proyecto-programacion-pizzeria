@@ -161,6 +161,38 @@ def menu_otros():
     return opcion  # devolvemos la opcion
 
 
+def menu_carrito(): # sirve para preguntar
+    # a el usuario si quiere o no quitar cosas de el carrito o si quiere solo ver que productos tiene
+
+    print("\n")
+
+    print("opcion 0 salir")
+
+    print("opcion 1 mostrar carrito")
+
+    print("opcion 2 quitar producto del carrito")
+
+    print("\n")
+
+    opcion = comprovar_try_except("selecciona una opcion de el menu: ")
+
+    while(opcion < 0 or opcion > 2):
+
+        print("\n")
+
+        print("opcion 0 salir")
+
+        print("opcion 1 mostrar carrito")
+
+        print("opcion 2 quitar producto del carrito")
+
+        print("\n")
+        
+        opcion = comprovar_try_except("selecciona una opcion correcta de el menu: ")
+
+    return opcion # devolvemos la opcion
+
+
 def menu():
 
    
