@@ -157,6 +157,8 @@ def menu_otros():
 
             print("\n")
 
+        return opcion
+
 
 
 def menu_ingredientes(): # en este menu se puede escoger si solo ver los ingredientes o modificarlos
@@ -245,3 +247,5 @@ def menu():
             else: # opcion 3
 
                 menu_otros()
+
+        
