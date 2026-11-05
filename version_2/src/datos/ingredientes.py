@@ -1,3 +1,6 @@
+from version_2.src.modelos.ingrediente import Ingrediente
+
+
 
 ingrediente_precio = {
         "Agua": 0.000002,
@@ -108,3 +111,64 @@ ingredientes_gramos = {
         "Base_queso": 80
 
     }
+
+
+Agua = Ingrediente("Agua", 0.000002,81)
+
+Sal = Ingrediente("Sal", 0.00075, 3.5)
+
+Harina = Ingrediente("Harina",0.00125, 135)
+
+Levadura = Ingrediente("Levadura", 0.06, 0.5)
+
+Cebolla = Ingrediente("Cebolla", 0.0015, 40)
+
+Cebolla_caramelizada = Ingrediente("Cebolla_caramelizada", 0.0015, 35)
+
+Ajo = Ingrediente("Ajo", 0.0015,5)
+
+Salsa_tomate = Ingrediente("Salsa_tomate", 0.0020, 70)
+
+Piña = Ingrediente("Piña", 0.0030, 50)
+
+Pimientos = Ingrediente("Pimientos", 0.0035, 35)
+
+Calabacin = Ingrediente("Calabacín", 0.0035,40)
+
+Tomate = Ingrediente("Tomate", 0.004,  80)
+
+Berenjenas = Ingrediente("Berenjenas",0.05, 35)
+
+Pimientos_asados = Ingrediente("Pimientos_asados",0.005,35)
+
+Alcaparras = Ingrediente("Alcaparras",0.006,15)
+
+Olivas_negras = Ingrediente("Olivas_negras",0.006, 25)
+
+Champiñones = Ingrediente("Champiñones",0.0065,35)
+
+Setas_temporada = Ingrediente("Setas_temporada", 0.0065,60)
+
+Hierbas = Ingrediente("Hierbas", 0.007, 2)
+
+Perejil = Ingrediente("Perejil", 0.007, 5)
+
+Eneldo = Ingrediente("Eneldo", 0.007, 1)
+
+Queso_Mozzarella = Ingrediente("Queso_Mozzarella", 0.0075, 80)
+
+Queso_Emmental = Ingrediente("Queso_Emmental", 0.0085, 40)
+
+Jamon_dulce = Ingrediente("Jamon_dulce", 0.009, 50)
+
+Huevo = Ingrediente("Huevo", 0.0095, 50)
+
+Baicon = Ingrediente("Baicon", 0.01, 43)
+
+Chistorra = Ingrediente("Chistorra", 0.012, 50)
+
+Butiffarra_pages = Ingrediente("Butiffarra_pages", 0.012, 60)
+
+Atun = Ingrediente("Atún", 0.013, 50)
+
+Salsa_boloñesa = Ingrediente("Salsal_boloñesa")
