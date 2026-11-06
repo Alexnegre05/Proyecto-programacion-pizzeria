@@ -1,24 +1,24 @@
+from version_2.src.modelos.pizza import Pizza
 
-    
-pizzerias_ingredientes = {
-        "Canet": ["Sobrasada", "Alcaparras", "Olivas_negras"],
-        "Cabrera": ["Salsa_boloñesa", "Pimientos", "Baicon"],
-        "Vilasar": ["Pimientos", "Berenjenas", "Anchoas"],
-        "Arenys": ["Gambas_salteadas", "Ajo", "Perejil", "Atún"],
-        "Mataro": ["Queso_Roquefort", "Queso_Emmental", "Queso_Parmesano", "Queso_Mozzarella"],
-        "Sant Vicençs": ["Tomate", "Queso_Emmental", "Hierbas"],
-        "Caldetes": ["Queso_Mozzarella", "Alcaparras", "Queso_Emmental", "Base_pesto"],
-        "El Masnou": ["Baicon", "Cebolla", "Huevo"],
-        "Sant Pol": ["Jamon_dulce", "Piña"],
-        "Premia": ["Chistorra", "Huevo", "Pimientos"],
-        "Argentona": ["Jamon_dulce", "Baicon", "Champiñones"],
-        "Pineda": ["Queso_cabra", "Tomate", "Baicon", "Queso_Emmental"],
-        "Orrius": ["Calabacín", "Alcachofas", "Champiñones", "Cebolla", "Olivas_negras"],
-        "Tiana": ["Queso_Raclette", "Baicon", "Tomate"],
-        "Estrac": ["Crema_pistacho", "Queso_Mozzarella", "Cebolla", "Baicon", "Rúcula"],
-        "Malgrat": ["Pepperoni", "Butifarra_pages", "Cebolla", "Pimientos", "Salsa_picante"],
-        "torrembo": ["Setas_temporada", "Butifarra_pages", "Perejil", "Ajo"],
-        "Maresme": ["Base_queso", "Salmón_ahumado", "Queso_Brie", "Mermelada_tomate_vainilla", "Eneldo"],
-        "Ocata": ["Base_queso", "Foie_mi-cuit", "Queso_Brie", "Cebolla_caramelizada", "Crema_balsámica"],
-        "Sant Iscle": ["Jamon_dulce", "Queso_Mozzarella"]
-    }
+pizzerias_ingredientes = [
+        Pizza("Canet",0, ["Sobrasada", "Alcaparras", "Olivas_negras"]),
+        Pizza("Cabrera",0, ["Salsa_boloñesa", "Pimientos", "Baicon"]),
+        Pizza("Vilasar",0, ["Pimientos", "Berenjenas", "Anchoas"]),
+        Pizza("Arenys",0, ["Gambas_salteadas", "Ajo", "Perejil", "Atún"]),
+        Pizza("Mataro",0, ["Queso_Roquefort", "Queso_Emmental", "Queso_Parmesano", "Queso_Mozzarella"]),
+        Pizza("Sant Vicençs",0, ["Tomate", "Queso_Emmental", "Hierbas"]),
+        Pizza("Caldetes",0, ["Queso_Mozzarella", "Alcaparras", "Queso_Emmental", "Base_pesto"]),
+        Pizza("El Masnou",0, ["Baicon", "Cebolla", "Huevo"]),
+        Pizza("Sant Pol",0, ["Jamon_dulce", "Piña"]),
+        Pizza("Premia",0, ["Chistorra", "Huevo", "Pimientos"]),
+        Pizza("Argentona",0, ["Jamon_dulce", "Baicon", "Champiñones"]),
+        Pizza("Pineda",0, ["Queso_cabra", "Tomate", "Baicon", "Queso_Emmental"]),
+        Pizza("Orrius",0, ["Calabacín", "Alcachofas", "Champiñones", "Cebolla", "Olivas_negras"]),
+        Pizza("Tiana",0, ["Queso_Raclette", "Baicon", "Tomate"]),
+        Pizza("Estrac",0, ["Crema_pistacho", "Queso_Mozzarella", "Cebolla", "Baicon", "Rúcula"]),
+        Pizza("Malgrat",0, ["Pepperoni", "Butifarra_pages", "Cebolla", "Pimientos", "Salsa_picante"]),
+        Pizza("torrembo",0, ["Setas_temporada", "Butifarra_pages", "Perejil", "Ajo"]),
+        Pizza("Maresme",0, ["Base_queso", "Salmón_ahumado", "Queso_Brie", "Mermelada_tomate_vainilla", "Eneldo"]),
+        Pizza("Ocata",0, ["Base_queso", "Foie_mi-cuit", "Queso_Brie", "Cebolla_caramelizada", "Crema_balsámica"]),
+        Pizza("Sant Iscle",0, ["Jamon_dulce", "Queso_Mozzarella"])
+    ]
