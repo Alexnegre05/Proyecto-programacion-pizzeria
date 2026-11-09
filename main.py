@@ -18,6 +18,10 @@ from version_2.src.datos.bebidas import lista_bebidas
 from version_2.src.datos.ingredientes import lista_ingredientes
 from version_2.src.modulos.ingrediente import modificar_gramos_v2, modificar_precio_v2,mostrar_ingredientes_v2
 
+from version_2.src.modulos.carrito import Carrito, print_ticket_v2, mostrar_carrito_v2, quitar_producto_carrito_v2
+
+
+
 if "__main__" == __name__:
 
     opcion_programa = seleccionar_opcion_programa() # se puede seleccionar que opcion de el programa ejecutar
@@ -118,7 +122,7 @@ if "__main__" == __name__:
 
     else:
 
-        lista_productos = []
+        lista_productos_carrito = Carrito() # creamos un carrito que este vacio
 
 
         opcion_general = menu_principal()
@@ -174,39 +178,39 @@ if "__main__" == __name__:
                         
                         bebida = seleccionar_bebida_v2(lista_bebidas)
 
+                        lista_productos_carrito.producto.append(bebida) # añadimos en la lista las bebidas
                         
 
-        #               bebidas.append(1) # añadimos que es una bebida popniendo un 1, para saber en ofertas que es exactamente este producto
-        #               lista_productos.append(bebidas)
+        #               
 
                         
 
                 case 3: # otros
                     opcion_otros = menu_otros()
 
-        #             if (opcion_otros == 1): # ofertas solo sirve para saber en este momento si se le aplica o no una oferta
-        #                 mostrar_ofertas()
+                    if (opcion_otros == 1): # ofertas solo sirve para saber en este momento si se le aplica o no una oferta
+                         mostrar_ofertas() # al no cambiar las ofertas se llama a la misa funcion
 
         #             elif (opcion_otros == 2): # cambiar temporada
 
         #                 cambiar_temporada()
 
-        #             elif (opcion_otros == 3): # carrito
+                    elif (opcion_otros == 3): # carrito
 
-        #                 opcion_carrito = menu_carrito()
+                        opcion_carrito = menu_carrito()
 
-        #                 if (opcion_carrito == 1):
+                        if (opcion_carrito == 1):
 
-        #                     carrito = mostrar_carrito(lista_productos)
-        #                     print(carrito)
+                            carrito = mostrar_carrito_v2(lista_productos_carrito.producto)
+                            print(carrito)
 
-        #                 elif (opcion_carrito == 2):
+                        elif (opcion_carrito == 2):
 
-        #                     lista_productos =  quitar_producto_carrito(lista_productos) # que se pueda quitar un producto
+                            lista_productos =  quitar_producto_carrito_v2(lista_productos_carrito.producto) # que se pueda quitar un producto
 
                     
-        #             elif (opcion_otros == 4): # opcion 4
-        #                 print(print_ticket(lista_productos))
+                    elif (opcion_otros == 4): # opcion 4
+                        print(print_ticket_v2(lista_productos_carrito.producto))
 
                         
             

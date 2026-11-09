@@ -17,6 +17,8 @@ def mostrar_carrito(lista_producto):
         else:
             return "\n no hay elementos en el carrito \n"
 
+
+
 def quitar_producto_carrito(lista_producto):
 
 
