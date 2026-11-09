@@ -15,6 +15,9 @@ from comun.try_except import comprovar_try_except
 from version_2.src.datos.bebidas import mostrar_bebida_v2, seleccionar_bebida_v2
 from version_2.src.datos.bebidas import lista_bebidas
 
+from version_2.src.datos.ingredientes import lista_ingredientes
+from version_2.src.modulos.ingrediente import modificar_gramos_v2, modificar_precio_v2,mostrar_ingredientes_v2
+
 if "__main__" == __name__:
 
     opcion_programa = seleccionar_opcion_programa() # se puede seleccionar que opcion de el programa ejecutar
@@ -128,7 +131,7 @@ if "__main__" == __name__:
                 case 1: # opcion seleccionada pizza
                     o_pizas = menu_pizzas()
 
-        #             match o_pizas: # selecciona la funcion que se encarga de esta parte
+                    match o_pizas: # selecciona la funcion que se encarga de esta parte
         #                 case 1:
         #                     obtener_catalogo()
                                 
@@ -138,20 +141,20 @@ if "__main__" == __name__:
         #                     pizzas.append(0) # añadimos que es una pizza popniendo un0, para saber en ofertas que es exactamente este producto
         #                     lista_productos.append(pizzas)
                                 
-        #                 case 3:
-        #                     opcion_ingredientes = menu_ingredientes() # menu para indicar que quiere hacer el usuario
+                        case 3:
+                            opcion_ingredientes = menu_ingredientes() # menu para indicar que quiere hacer el usuario
 
-        #                     if (opcion_ingredientes == 1):
+                            if (opcion_ingredientes == 1):
 
-        #                         mostrar_ingredientes()
+                                 mostrar_ingredientes_v2(lista_ingredientes)
 
-        #                     elif (opcion_ingredientes == 2):
+                            elif (opcion_ingredientes == 2):
 
-        #                         ingredientes_gramos = modificar_gramos(ingredientes_gramos)
+                                lista_ingredientes = ingredientes_gramos = modificar_gramos_v2(lista_ingredientes)
 
-        #                     elif (opcion_ingredientes == 3):
+                            elif (opcion_ingredientes == 3):
 
-        #                         ingrediente_precio = modificar_precio(ingrediente_precio)
+                                lista_ingredientes = modificar_precio_v2(lista_ingredientes)
                                 
                 
                         
