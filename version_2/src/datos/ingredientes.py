@@ -2,115 +2,7 @@ from version_2.src.modelos.ingrediente import Ingrediente
 
 
 
-ingrediente_precio = {
-        "Agua": 0.000002,
-        "Sal": 0.00075,
-        "Harina": 0.00125,
-        "Levadura": 0.06000,
-        "Cebolla": 0.0015,
-        "Cebolla_caramelizada": 0.0015,
-        "Ajo": 0.0015,
-        "Salsa_tomate": 0.0020,
-        "Piña": 0.0030,
-        "Pimientos": 0.0035,
-        "Calabacín": 0.0035,
-        "Tomate": 0.0040,
-        "Berenjenas": 0.0050,
-        "Pimientos_asados": 0.0050,
-        "Alcaparras": 0.0060,
-        "Olivas_negras": 0.0060,
-        "Champiñones": 0.0065,
-        "Setas_temporada": 0.0065,
-        "Hierbas": 0.0070,
-        "Perejil": 0.0070,
-        "Eneldo": 0.0070,
-        "Queso_Mozzarella": 0.0075,
-        "Queso_Emmental": 0.0085,
-        "Jamon_dulce": 0.0090,
-        "Huevo": 0.0095,
-        "Baicon": 0.0100,
-        "Chistorra": 0.0120,
-        "Butifarra_pages": 0.0120,
-        "Atún": 0.0130,
-        "Salsa_boloñesa": 0.0130,
-        "Aceite_de_oliva": 0.0135,
-        "Base_pesto": 0.0150,
-        "Pepperoni": 0.0160,
-        "Alcachofas": 0.0170,
-        "Salsa_picante": 0.0180,
-        "Gambas_salteadas": 0.0220,
-        "Queso_cabra": 0.0240,
-        "Anchoas": 0.0250,
-        "Queso_Parmesano": 0.0260,
-        "Queso_Brie": 0.0260,
-        "Queso_Raclette": 0.0260,
-        "Sobrasada": 0.0280,
-        "Rúcula": 0.0290,
-        "Crema_pistacho": 0.0320,
-        "Mermelada_tomate_vainilla": 0.0350,
-        "Crema_balsámica": 0.0350,
-        "Queso_Roquefort": 0.0380,
-        "Salmón_ahumado": 0.0650,
-        "Jamón_Ibérico": 0.0850,
-        "Foie_mi-cuit": 0.0900,
-        "Base_queso": 0.0150
-    }
 
-
-ingredientes_gramos = {
-    "Agua": 81,
-        "Sal": 3.5,
-        "Harina": 135,
-        "Levadura": 0.5,
-        "Cebolla": 40,
-        "Cebolla_caramelizada": 35,
-        "Ajo": 5,
-        "Salsa_tomate": 70,
-        "Piña": 50,
-        "Pimientos": 35,
-        "Calabacín": 40,
-        "Tomate": 80,
-        "Berenjenas": 35,
-        "Pimientos_asados": 35,
-        "Alcaparras": 15,
-        "Olivas_negras": 25,
-        "Champiñones": 35,
-        "Setas_temporada": 60,
-        "Hierbas": 2,
-        "Perejil": 5,
-        "Eneldo": 1,
-        "Queso_Mozzarella": 80,
-        "Queso_Emmental": 40,
-        "Jamon_dulce": 50,
-        "Huevo": 50,
-        "Baicon": 43,
-        "Chistorra": 50,
-        "Butifarra_pages": 60,
-        "Atún": 50,
-        "Salsa_boloñesa": 60,
-        "Aceite_de_oliva": 10,
-        "Base_pesto": 50,
-        "Pepperoni": 40,
-        "Alcachofas": 40,
-        "Salsa_picante": 10,
-        "Gambas_salteadas": 50,
-        "Queso_cabra": 40,
-        "Anchoas": 20,
-        "Queso_Parmesano": 20,
-        "Queso_Brie": 45,
-        "Queso_Raclette":40,
-        "Sobrasada": 45,
-        "Rúcula": 15,
-        "Crema_pistacho": 50,
-        "Mermelada_tomate_vainilla": 25,
-        "Crema_balsámica": 15,
-        "Queso_Roquefort": 30,
-        "Salmón_ahumado": 50,
-        "Jamón_Ibérico": 40,
-        "Foie_mi-cuit": 35,
-        "Base_queso": 80
-
-    }
 
 
 Agua = Ingrediente("Agua", 0.000002,81)
@@ -171,4 +63,48 @@ Butiffarra_pages = Ingrediente("Butiffarra_pages", 0.012, 60)
 
 Atun = Ingrediente("Atún", 0.013, 50)
 
-Salsa_boloñesa = Ingrediente("Salsal_boloñesa")
+Salsa_boloñesa = Ingrediente("Salsa_boloñesa", 0.013,60)
+
+Aceite_de_oliva = Ingrediente("Aceite_de_oliva", 0.0135, 10)
+
+Base_pesto = Ingrediente("Base_pesto",0.15, 50)
+
+Peperoni = Ingrediente("Peperoni",0.016 , 40)
+
+Alcachofa = Ingrediente("Alcachofa", 0.017, 40)
+
+Salsa_picante = Ingrediente("Salsa_picante",0.018,10)
+
+Gambas_salteadas = Ingrediente("Gambas_salteadas",0.022, 50)
+
+Queso_cabra = Ingrediente("Queso_cabra", 0.024, 40)
+
+Anchoas = Ingrediente("Anchoas",0.025,20)
+
+Queso_Parmesano = Ingrediente("Queso_Parmesano", 0.0260, 20)
+
+Queso_Brie = Ingrediente("Queso_Brie", 0.0260, 45)
+
+Queso_Raclette = Ingrediente("Queso_Raclette", 0.0260, 40)
+
+Sobrasada = Ingrediente("Sobrasada", 0.0280, 45)
+
+Rúcula = Ingrediente("Rúcula", 0.0290, 15)
+
+Crema_pistacho = Ingrediente("Crema_pistacho", 0.0320, 50)
+
+Mermelada_tomate_vainilla = Ingrediente("Mermelada_tomate_vainilla", 0.0350, 25)
+
+Crema_balsámica = Ingrediente("Crema_balsámica", 0.0350, 15)
+
+Queso_Roquefort = Ingrediente("Queso_Roquefort", 0.0380, 30)
+
+Salmón_ahumado = Ingrediente("Salmón_ahumado", 0.0650, 50)
+
+Jamón_Ibérico = Ingrediente("Jamón_Ibérico", 0.0850, 40)
+
+Foie_mi_cuit = Ingrediente("Foie_mi-cuit", 0.0900, 35)
+
+Base_queso = Ingrediente("Base_queso", 0.0150, 80)
+
+lista_ingredientes = [Agua, Sal, Harina, Levadura, Cebolla, Cebolla_caramelizada, Ajo,Salsa_tomate, Piña, Pimientos, Calabacin, Tomate, Berenjenas,Pimientos_asados, Alcaparras, Olivas_negras, Champiñones,Setas_temporada, Hierbas, Perejil, Eneldo, Queso_Mozzarella,Queso_Emmental, Jamon_dulce, Huevo, Baicon, Chistorra,Butiffarra_pages, Atun, Salsa_boloñesa, Aceite_de_oliva,Base_pesto, Peperoni, Alcachofa, Salsa_picante, Gambas_salteadas,Queso_cabra, Anchoas, Queso_Parmesano, Queso_Brie, Queso_Raclette,Sobrasada, Rúcula, Crema_pistacho, Mermelada_tomate_vainilla,Crema_balsámica, Queso_Roquefort, Salmón_ahumado, Jamón_Ibérico,Foie_mi_cuit, Base_queso]
