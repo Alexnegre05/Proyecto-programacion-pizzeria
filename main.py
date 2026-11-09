@@ -191,9 +191,9 @@ if "__main__" == __name__:
                     if (opcion_otros == 1): # ofertas solo sirve para saber en este momento si se le aplica o no una oferta
                          mostrar_ofertas() # al no cambiar las ofertas se llama a la misa funcion
 
-        #             elif (opcion_otros == 2): # cambiar temporada
+                    elif (opcion_otros == 2): # cambiar temporada
 
-        #                 cambiar_temporada()
+                         cambiar_temporada()
 
                     elif (opcion_otros == 3): # carrito
 
