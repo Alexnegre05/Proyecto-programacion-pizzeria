@@ -1,4 +1,4 @@
-from version_2.src.modelos.bebida import Bebida
+from version_2.src.modulos.bebida import Bebida
 
 from comun.try_except import comprovar_try_except
 # creamos las 6 bebidas
