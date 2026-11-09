@@ -32,3 +32,10 @@ class Pizza(Producto):
         pizza_selecionada.append(lista_pizzas[seleccion-1])
 
         return pizza_selecionada    
+
+    def Calcular_precio_unidad_v2():
+        total_unidad=0
+
+        
+         
+        pass
