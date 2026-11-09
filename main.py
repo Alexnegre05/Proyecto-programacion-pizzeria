@@ -113,7 +113,7 @@ if "__main__" == __name__:
                         
             opcion_general = menu_principal()
 
-    elif(opcion_programa == 2):
+    else:
 
         lista_productos = []
 
