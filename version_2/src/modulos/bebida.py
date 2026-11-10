@@ -1,4 +1,4 @@
-from version_2.src.modelos.producto import Producto
+from version_2.src.modulos.producto import Producto
 
 class Bebida(Producto):
 

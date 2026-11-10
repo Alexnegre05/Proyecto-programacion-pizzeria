@@ -15,6 +15,13 @@ from comun.try_except import comprovar_try_except
 from version_2.src.datos.bebidas import mostrar_bebida_v2, seleccionar_bebida_v2
 from version_2.src.datos.bebidas import lista_bebidas
 
+from version_2.src.datos.ingredientes import lista_ingredientes
+from version_2.src.modulos.ingrediente import modificar_gramos_v2, modificar_precio_v2,mostrar_ingredientes_v2
+
+from version_2.src.modulos.carrito import Carrito, print_ticket_v2, mostrar_carrito_v2, quitar_producto_carrito_v2
+
+
+
 if "__main__" == __name__:
 
     opcion_programa = seleccionar_opcion_programa() # se puede seleccionar que opcion de el programa ejecutar
@@ -115,7 +122,7 @@ if "__main__" == __name__:
 
     else:
 
-        lista_productos = []
+        lista_productos_carrito = Carrito() # creamos un carrito que este vacio
 
 
         opcion_general = menu_principal()
@@ -128,7 +135,7 @@ if "__main__" == __name__:
                 case 1: # opcion seleccionada pizza
                     o_pizas = menu_pizzas()
 
-        #             match o_pizas: # selecciona la funcion que se encarga de esta parte
+                    match o_pizas: # selecciona la funcion que se encarga de esta parte
         #                 case 1:
         #                     obtener_catalogo()
                                 
@@ -138,20 +145,20 @@ if "__main__" == __name__:
         #                     pizzas.append(0) # añadimos que es una pizza popniendo un0, para saber en ofertas que es exactamente este producto
         #                     lista_productos.append(pizzas)
                                 
-        #                 case 3:
-        #                     opcion_ingredientes = menu_ingredientes() # menu para indicar que quiere hacer el usuario
+                        case 3:
+                            opcion_ingredientes = menu_ingredientes() # menu para indicar que quiere hacer el usuario
 
-        #                     if (opcion_ingredientes == 1):
+                            if (opcion_ingredientes == 1):
 
-        #                         mostrar_ingredientes()
+                                 mostrar_ingredientes_v2(lista_ingredientes)
 
-        #                     elif (opcion_ingredientes == 2):
+                            elif (opcion_ingredientes == 2):
 
-        #                         ingredientes_gramos = modificar_gramos(ingredientes_gramos)
+                                lista_ingredientes = ingredientes_gramos = modificar_gramos_v2(lista_ingredientes)
 
-        #                     elif (opcion_ingredientes == 3):
+                            elif (opcion_ingredientes == 3):
 
-        #                         ingrediente_precio = modificar_precio(ingrediente_precio)
+                                lista_ingredientes = modificar_precio_v2(lista_ingredientes)
                                 
                 
                         
@@ -171,39 +178,39 @@ if "__main__" == __name__:
                         
                         bebida = seleccionar_bebida_v2(lista_bebidas)
 
+                        lista_productos_carrito.producto.append(bebida) # añadimos en la lista las bebidas
                         
 
-        #               bebidas.append(1) # añadimos que es una bebida popniendo un 1, para saber en ofertas que es exactamente este producto
-        #               lista_productos.append(bebidas)
+        #               
 
                         
 
                 case 3: # otros
                     opcion_otros = menu_otros()
 
-        #             if (opcion_otros == 1): # ofertas solo sirve para saber en este momento si se le aplica o no una oferta
-        #                 mostrar_ofertas()
+                    if (opcion_otros == 1): # ofertas solo sirve para saber en este momento si se le aplica o no una oferta
+                         mostrar_ofertas() # al no cambiar las ofertas se llama a la misa funcion
 
-        #             elif (opcion_otros == 2): # cambiar temporada
+                    elif (opcion_otros == 2): # cambiar temporada
 
-        #                 cambiar_temporada()
+                         cambiar_temporada()
 
-        #             elif (opcion_otros == 3): # carrito
+                    elif (opcion_otros == 3): # carrito
 
-        #                 opcion_carrito = menu_carrito()
+                        opcion_carrito = menu_carrito()
 
-        #                 if (opcion_carrito == 1):
+                        if (opcion_carrito == 1):
 
-        #                     carrito = mostrar_carrito(lista_productos)
-        #                     print(carrito)
+                            carrito = mostrar_carrito_v2(lista_productos_carrito.producto)
+                            print(carrito)
 
-        #                 elif (opcion_carrito == 2):
+                        elif (opcion_carrito == 2):
 
-        #                     lista_productos =  quitar_producto_carrito(lista_productos) # que se pueda quitar un producto
+                            lista_productos =  quitar_producto_carrito_v2(lista_productos_carrito.producto) # que se pueda quitar un producto
 
                     
-        #             elif (opcion_otros == 4): # opcion 4
-        #                 print(print_ticket(lista_productos))
+                    elif (opcion_otros == 4): # opcion 4
+                        print(print_ticket_v2(lista_productos_carrito.producto))
 
                         
             
