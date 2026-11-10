@@ -1,4 +1,4 @@
-from version_2.src.modelos.pizza import Pizza
+from version_2.src.modulos.pizza import Pizza
 
 pizzerias_ingredientes = [
         Pizza("Canet",0, ["Sobrasada", "Alcaparras", "Olivas_negras"]),

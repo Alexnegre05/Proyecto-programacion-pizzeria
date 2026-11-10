@@ -1,4 +1,4 @@
-from version_2.src.modelos.ingrediente import Ingrediente
+from version_2.src.modulos.ingrediente import Ingrediente
 
 
 

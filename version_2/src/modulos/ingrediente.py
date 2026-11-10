@@ -1,5 +1,3 @@
-from version_2.src.datos.ingredientes import lista_ingredientes
-
 class Ingrediente:
     def __init__(self,nombre, precio, gramos):
         self.nombre = nombre
