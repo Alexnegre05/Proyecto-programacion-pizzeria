@@ -9,7 +9,9 @@ class Ingrediente:
         self.gramos = gramos
         self.nombre = nombre
 
-    
+    def coste_ingrediente_v2(self):
+
+        return self.precio * self.gramos
 
 def modificar_gramos_v2(lista_ingredientes):
 
