@@ -20,6 +20,9 @@ from version_2.src.modulos.ingrediente import modificar_gramos_v2, modificar_pre
 
 from version_2.src.modulos.carrito import Carrito, print_ticket_v2, mostrar_carrito_v2, quitar_producto_carrito_v2
 
+from version_2.src.datos.pizzas import pizzerias_ingredientes
+from version_2.src.modulos.pizza import Pizza
+from version_2.src.datos.ingredientes import lista_ingredientes
 
 
 if "__main__" == __name__:
@@ -123,27 +126,36 @@ if "__main__" == __name__:
     else:
 
         lista_productos_carrito = Carrito() # creamos un carrito que este vacio
-
+        
 
         opcion_general = menu_principal()
+        lista_pizzas =[]
 
         while opcion_general > 0 and opcion_general < 4:
-
-            pass
+            
 
             match opcion_general:
+                
                 case 1: # opcion seleccionada pizza
                     o_pizas = menu_pizzas()
 
-                    match o_pizas: # selecciona la funcion que se encarga de esta parte
-        #                 case 1:
-        #                     obtener_catalogo()
-                                
-        #                 case 2:
-        #                     pizzas = calculo_precio_pizzas()
+                    resultado = Pizza.mostrar_pizza_v2(pizzerias_ingredientes)
 
-        #                     pizzas.append(0) # añadimos que es una pizza popniendo un0, para saber en ofertas que es exactamente este producto
-        #                     lista_productos.append(pizzas)
+                    match o_pizas: # selecciona la funcion que se encarga de esta parte
+                        case 1:
+                             print(resultado)
+                                
+                        case 2:
+
+                            resultado_seleccion=Pizza.selecionar_pizzar_v2(pizzerias_ingredientes)
+                            resultado_seleccion.calcular_precio_pizzas(lista_ingredientes)
+
+                            lista_productos_carrito.producto.append(resultado_seleccion)
+                            lista_pizzas.append(resultado_seleccion)
+                            for pizza in lista_pizzas:
+
+                                print(f"pizza: {pizza.nombre} ,precio: {pizza.precio}, ingredientes: {pizza.ingredientes}")
+
                                 
                         case 3:
                             opcion_ingredientes = menu_ingredientes() # menu para indicar que quiere hacer el usuario

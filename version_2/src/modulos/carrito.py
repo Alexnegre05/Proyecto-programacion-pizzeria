@@ -12,7 +12,6 @@ class Carrito:
         
 
 
-
 def mostrar_carrito_v2(lista_producto):
 
         

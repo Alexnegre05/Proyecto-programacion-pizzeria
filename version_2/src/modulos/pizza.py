@@ -50,22 +50,17 @@ class Pizza(Producto):
 
         return total_precio_por_ingrediente
             
-    def calcular_precio_pizzas(lista_pizzas_seleccionadas,lista_objetos_ingredientes):
-
-        precio_x_pizza=[]
+    def calcular_precio_pizzas(self,lista_objetos_ingredientes):
 
         gastos_suministros = 5500
 
-        for pizza in lista_pizzas_seleccionadas:
+        precio_total_ingredientes = self.Calcular_precio_ingrediente_v2(lista_objetos_ingredientes)
 
-            precio_total_ingredientes = pizza.Calcular_precio_ingrediente_v2(lista_objetos_ingredientes)
+        beneficios = precio_total_ingredientes/2
 
-            beneficios = precio_total_ingredientes/2
+        total = precio_total_ingredientes + beneficios + gastos_suministros/200 # Guardamos en una variable el coste dacada una de las pizzas selecionadas
 
-            total = precio_total_ingredientes + beneficios + gastos_suministros/200 # Guardamos en una variable el coste dacada una de las pizzas selecionadas
+        self.precio = total
 
-            precio_x_pizza.append(total)
-
-        return precio_x_pizza   #Retornamos en una lista cada uno de los costes de cada pizza seleccionada
         
         
