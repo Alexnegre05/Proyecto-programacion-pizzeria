@@ -141,20 +141,17 @@ if "__main__" == __name__:
 
                     resultado = Pizza.mostrar_pizza_v2(pizzerias_ingredientes)
 
-                    match o_pizas: # selecciona la funcion que se encarga de esta parte
-                        case 1:
+                    match o_pizas: # Selecciona la funcion que se encarga de esta parte
+                        case 1: # Muestra el catalo de pizzas
                              print(resultado)
                                 
-                        case 2:
+                        case 2: # Selecciona la pizza y nos muestra el carrito
 
                             resultado_seleccion=Pizza.selecionar_pizzar_v2(pizzerias_ingredientes)
                             resultado_seleccion.calcular_precio_pizzas(lista_ingredientes)
 
                             lista_productos_carrito.producto.append(resultado_seleccion)
-                            lista_pizzas.append(resultado_seleccion)
-                            for pizza in lista_pizzas:
-
-                                print(f"pizza: {pizza.nombre} ,precio: {pizza.precio}, ingredientes: {pizza.ingredientes}")
+                            print(mostrar_carrito_v2(lista_productos_carrito.producto))
 
                                 
                         case 3:
