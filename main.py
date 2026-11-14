@@ -18,7 +18,7 @@ from version_2.src.datos.bebidas import lista_bebidas
 from version_2.src.datos.ingredientes import lista_ingredientes
 from version_2.src.modulos.ingrediente import modificar_gramos_v2, modificar_precio_v2,mostrar_ingredientes_v2
 
-from version_2.src.modulos.carrito import Carrito, print_ticket_v2, mostrar_carrito_v2, quitar_producto_carrito_v2
+from version_2.src.modulos.carrito import Carrito, mostrar_carrito_v2, quitar_producto_carrito_v2
 
 from version_2.src.datos.pizzas import pizzerias_ingredientes
 from version_2.src.modulos.pizza import Pizza
@@ -219,7 +219,7 @@ if "__main__" == __name__:
 
                     
                     elif (opcion_otros == 4): # opcion 4
-                        print(print_ticket_v2(lista_productos_carrito.producto))
+                        print(lista_productos_carrito.print_ticket_v2())
 
                         
             
