@@ -146,7 +146,10 @@ if "__main__" == __name__:
                              print(resultado)
                                 
                         case 2: # Selecciona la pizza y nos muestra el carrito
+                            resultado = Pizza.mostrar_pizza_v2(pizzerias_ingredientes)
 
+                            print(resultado)
+                            
                             resultado_seleccion=Pizza.selecionar_pizzar_v2(pizzerias_ingredientes)
                             resultado_seleccion.calcular_precio_pizzas(lista_ingredientes)
 
